@@ -1,0 +1,14 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName man2bengkulu.com
+AuthUserFile /home/man2ben1/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/man2ben1/public_html/_vti_pvt/service.grp
