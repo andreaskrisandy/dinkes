@@ -176,6 +176,58 @@
 					<h2 id="soConnector"><center>Web Statistik</center></h2>
 					<br class="cleaner" />
 					<div id="webstat"><?php include("include/counter.php"); ?></div>
+          <br class="cleaner" />
+          <div id="otherWeb">
+            <a href="http://www.depkes.go.id/" target="_blank" class="link one">
+              <div class="row">
+                <div>
+                  <img style="margin-left:90px;height:50px;width:50px;" src="images/kemenkes.png" alt="">
+                  <div style="margin-left:0px;">
+                    Kementrian Kesehatan Republik Indonesia
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <br class="cleaner" />
+          <div id="otherWeb">
+            <a href="http://www.diskes.jabarprov.go.id/" target="_blank" class="link one">
+              <div class="row">
+                <div>
+                  <img style="margin-left:90px;height:50px;width:50px;" src="images/provjab.png" alt="">
+                  <div style="margin-left:40px;">
+                    Dinkes Provinsi Jawa Barat
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <br class="cleaner" />
+          <div id="otherWeb">
+            <a href="http://www.bandung.go.id/" target="_blank" class="link one">
+              <div class="row">
+                <div>
+                  <img style="margin-left:90px;height:40px;width:50px;" src="images/bandung.png" alt="">
+                  <div style="margin-left:90px;">
+                    Bandung
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <br class="cleaner" />
+          <div id="otherWeb">
+            <a href="#" target="_blank" class="link one">
+              <div class="row">
+                <div>
+                  <img style="margin-left:90px;height:60px;width:50px;" src="images/spgdt.png" alt="">
+                  <div style="margin-left:80px;">
+                    SPGDT 119
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 				</div>
 
 				<br class="cleaner" />
