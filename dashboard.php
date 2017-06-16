@@ -181,7 +181,7 @@
 
 		<div id="templatemo_cr_bar_wrapper">
 			<div id="templatemo_cr_bar">
-				<strong>Copyright © 2014</strong> <a href="?page=main">Madrasah Aliah Negeri (MAN) 2 Kota Bengkulu</a> | Developed by <strong>Hdroot</strong> | Publish by <a href="http://sedotcode.blogspot.com/">Sedot Free SourceCode</a> | All Rights Reserved
+				<strong>Copyright © 2017</strong> <a href="?page=main">Dinas Kesehatan Kota Bandung</a><strong></strong></a>
 			</div>
 		</div>
 	</body>
