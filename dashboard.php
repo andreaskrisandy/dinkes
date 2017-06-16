@@ -110,10 +110,9 @@
 			<div id="templatemo_slider_wrapper">
 
 				<div id="slider" class="nivoSlider">
-					<a href="#"><img src="images/slider/01.jpg" alt="Slider 01" /></a>
-					<a href="#"><img src="images/slider/02.jpg" alt="Slider 02" /></a>
-					<a href="#"><img src="images/slider/03.jpg" alt="Slider 03" /></a>
-					<a href="#"><img src="images/slider/04.jpg" alt="Slider 04" /></a>
+          <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
+          <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
+          <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
 				</div>
 
 				<div id="htmlcaption" class="nivo-html-caption">
