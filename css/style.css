@@ -1,11 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: #666;
+	color: #221f1f;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	line-height: 1.3em;
 	background: #6d6d6d ;
+=======
+	background: #19e683 url(../images/templatemo_body.jpg) fixed repeat;
 }
 
 a, a:link, a:visited {
