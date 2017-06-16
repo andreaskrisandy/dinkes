@@ -95,7 +95,7 @@
 					</li>
 					<li><a href="?page=galeri">Galeri</a></li>
 					<li><a href="?page=buku-tamu">Buku Tamu</a></li>
-          <li><a href="?page=psc119">PSC 199</a></li>
+          <li><a href="?page=psc119">PSC 119</a></li>
 				</ul>
 				<br style="clear: left" />
 			</div>
