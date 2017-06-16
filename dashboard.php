@@ -95,6 +95,7 @@
 					</li>
 					<li><a href="?page=galeri">Galeri</a></li>
 					<li><a href="?page=buku-tamu">Buku Tamu</a></li>
+          <li><a href="?page=psc119">PSC 199</a></li>
 				</ul>
 				<br style="clear: left" />
 			</div>
@@ -155,6 +156,8 @@
 								include('tamu.php');
 							} elseif ($page == 'kontak'){
 								include('kontak.php');
+              } elseif ($page == 'psc119'){
+                include('psc199.php');
 							} elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
