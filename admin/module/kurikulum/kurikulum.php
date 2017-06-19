@@ -7,7 +7,7 @@
 				<button type="submit" name="submit" class="ok1" onclick="window.location='?module=kurikulum&mode=add'">Tambah</button>
 			<?php
 			echo "<table class=\"admin\" border=\"0\" cellpadding=\"5px\" cellspacing=\"1px\"><thead>
-				  <tr bgcolor=\"#ffffff\"><th align=\"center\">No</th><th align=\"center\">UPT Puskesmas</th><th align=\"center\">Penanggung Jawab</th><th align=\"center\">Alamat</th><th align=\"center\">Telepon</th><th align=\"center\">Pelayanan Unggulan</th></tr></thead>";
+				  <tr bgcolor=\"#ffffff\"><th align=\"center\">No</th><th align=\"center\">UPT Puskesmas</th><th align=\"center\">Penanggung Jawab</th><th align=\"center\">Alamat</th><th align=\"center\">Telepon</th><th align=\"center\">Pelayanan Unggulan</th><th>Aksi</th></tr></thead>";
 			$query = mysql_query("select * from kurikulum order by id_kurikulum desc");
 			$no = 1;
 			while ($data = mysql_fetch_array($query)){
