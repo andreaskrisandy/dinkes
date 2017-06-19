@@ -22,10 +22,11 @@
 	<thead>
 		<tr>
 			<th>No</th>
-			<th>Kelas/Semester</th>
-			<th>Mata Pelajaran</th>
-			<th>Standar Kompetensi</th>
-			<th>Kompetensi Dasar</th>
+			<th>Puskesmas</th>
+			<th>Kepala Puskesmas</th>
+			<th>Alamat</th>
+			<th>Telepon</th>
+			<th>Pelayanan Unggulan</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -40,6 +41,7 @@
 						<td>$kurikulum[mapel]</td>
 						<td>$kurikulum[standar]</td>
 						<td>$kurikulum[kompetensi]</td>
+						<td>$kurikulum[tambahan]</td>
 					</tr>
 					";
 			$no++;
@@ -49,10 +51,11 @@
 	<tfoot>
 		<tr>
 			<th>No</th>
-			<th>Kelas/Semester</th>
-			<th>Mata Pelajaran</th>
-			<th>Standar Kompetensi</th>
-			<th>Kompetensi Dasar</th>
+			<th>Puskesmas</th>
+			<th>Kepala Puskesmas</th>
+			<th>Alamat</th>
+			<th>Telepon</th>
+			<th>Pelayanan Unggulan</th>
 		</tr>
 	</tfoot>
 </table>
