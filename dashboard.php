@@ -10,9 +10,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Dinas Kesehatan Kota Bandung</title>
-		<meta name="keywords" content="SMK, negeri, 1,lebong, selatan" />
-		<meta name="description" content="SMK Negeri 1 Lebong Selatan" />
-		<link rel="shortcut icon" href="images/icon.jpg">
+		<meta name="keywords" content="Dinas Kesehatan Kota Bandung" />
+		<meta name="description" content="Dinas Kesehatan Kota Bandung" />
+		<link rel="shortcut icon" href="images/bandung.png">
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/nivo.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/table.css" media="screen" />
@@ -22,6 +22,7 @@
 		<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
 		<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
 		<script type="text/javascript" src="js/jsdatepick.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script language="javascript" type="text/javascript">
 			window.onload = function(){
 				g_globalObject2 = new JsDatePick({
@@ -177,6 +178,10 @@
 					<h2 id="soConnector"><center>Web Statistik</center></h2>
 					<br class="cleaner" />
 					<div id="webstat"><?php include("include/counter.php"); ?></div>
+          <br class="cleaner" />
+          <div>
+            <a class="twitter-timeline" data-width="250" data-height="250" data-theme="light" href="https://twitter.com/Bandung_Dinkes">Tweets by Bandung_Dinkes</a>
+          </div>
           <br class="cleaner" />
           <div id="otherWeb">
             <a href="http://www.depkes.go.id/" target="_blank" class="link one">
