@@ -7,7 +7,7 @@
 				<button type="submit" name="submit" class="ok1" onclick="window.location='?module=kurikulum&mode=add'">Tambah</button>
 			<?php
 			echo "<table class=\"admin\" border=\"0\" cellpadding=\"5px\" cellspacing=\"1px\"><thead>
-				  <tr bgcolor=\"#ffffff\"><th align=\"center\">No</th><th align=\"center\">Kelas/Semester</th><th align=\"center\">Mata Pelajaran</th><th align=\"center\">Standar Kompetensi</th><th align=\"center\">Kompetensi Dasar</th><th align=\"center\">Pengaturan</th></tr></thead>";
+				  <tr bgcolor=\"#ffffff\"><th align=\"center\">No</th><th align=\"center\">UPT Puskesmas</th><th align=\"center\">Penanggung Jawab</th><th align=\"center\">Alamat</th><th align=\"center\">Telepon</th><th align=\"center\">Pelayanan Unggulan</th></tr></thead>";
 			$query = mysql_query("select * from kurikulum order by id_kurikulum desc");
 			$no = 1;
 			while ($data = mysql_fetch_array($query)){
@@ -17,6 +17,7 @@
 					echo "<td>$data[mapel]</td>";
 					echo "<td>$data[standar]</td>";
 					echo "<td>$data[kompetensi]</td>";
+					echo "<td>$data[tambahan]</td>";
 					echo "<td align=\"center\"><a title=\"Edit\" class=\"table-icon edit\" href=\"?module=kurikulum&mode=edit&id=$data[id_kurikulum]\"></a>&nbsp;&nbsp;&nbsp;<a title=\"Hapus\" class=\"table-icon delete\"href=\"?module=kurikulum&mode=delete&id=$data[id_kurikulum]\"></a></td>";
 				echo "</tr></tbody>";
 				$no++;
@@ -34,23 +35,23 @@
 						<input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>" />
 						<table class="admin" cellspacing="5px">
 							<tr>
-								<td><label>Contoh datax</label></td>
+								<td><label>1</label></td>
 								<td><input type="text" name="ks" size="80" value="<?php echo $data["ks"]; ?>" /></td>
 							</tr>
 							<tr>
-								<td><label>Mata Pelajaran</label></td>
+								<td><label>2</label></td>
 								<td><input type="text" name="mapel" size="80" value="<?php echo $data["mapel"]; ?>" /></td>
 							</tr>
 							<tr>
-								<td><label>Standar Kompetensi</label></td>
+								<td><label>3</label></td>
 								<td><textarea name="standar"><?php echo $data["standar"]; ?></textarea></td>
 							</tr>
 							<tr>
-								<td><label>Kompetensi Dasar</label></td>
+								<td><label>4</label></td>
 								<td><textarea name="kompetensi"><?php echo $data["kompetensi"]; ?></textarea></td>
 							</tr>
 							<tr>
-								<td><label>Tambahan ini mah</label></td>
+								<td><label>5</label></td>
 								<td><textarea name="tambahan"><?php echo $data["tambahan"]; ?></textarea></td>
 							</tr>
 							<tr>
@@ -75,23 +76,23 @@
 					<form action="module/kurikulum/action.php" method="post">
 						<table class="admin" cellspacing="5px">
 							<tr>
-								<td><label>Contoh Data Tampil</label></td>
+								<td><label>1</label></td>
 								<td><input type="text" name="ks" size="80" /></td>
 							</tr>
 							<tr>
-								<td><label>Mata Pelajaran</label></td>
+								<td><label>2</label></td>
 								<td><input type="text" name="mapel" size="80" /></td>
 							</tr>
 							<tr>
-								<td><label>Standar Kompetensi</label></td>
+								<td><label>3</label></td>
 								<td><textarea name="standar"></textarea></td>
 							</tr>
 							<tr>
-								<td><label>Kompetensi Dasar</label></td>
+								<td><label>4</label></td>
 								<td><textarea name="kompetensi"></textarea></td>
 							</tr>
 							<tr>
-								<td><label>Tambahan</label></td>
+								<td><label>5</label></td>
 								<td><textarea name="tambahan"></textarea></td>
 							</tr>
 							<tr>
