@@ -170,6 +170,9 @@
 						}
 					?>
 				</div>
+        <div class="">
+          <h2>Pengumuman</h2>
+        </div>
 
 				<div class="col_right float_r">
 					<h2><center><?php echo $today; ?></center></h2>
