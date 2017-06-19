@@ -37,13 +37,20 @@
 		</div>
 		<div id="nav">
 			<ul>
-				<li class="upp"><a href="?module=main">Beranda</a></li>
+				<li class="upp"><a href="?module=main">Berita Terbaru</a></li>
+        <li class="upp"><a href="#">Dashboard</a>
+					<ul>
+						<li>&#8250; <a href="?module=non-akademik&id=1">Pengumuman</a></li>
+						<li>&#8250; <a href="?module=non-akademik&id=2">Artikel Kesehatan</a></li>
+						<li>&#8250; <a href="?module=non-akademik&id=3">Promosi Kesehatan</a></li>
+					</ul>
+				</li>
 				<li class="upp"><a href="#">Profil</a>
 					<ul>
 						<li>&#8250; <a href="?module=history">Sejarah</a></li>
 						<li>&#8250; <a href="?module=vision">Visi &amp; Misi</a></li>
 						<li>&#8250; <a href="?module=kepsek">Struktur Organisasi</a></li>
-						<li>&#8250; <a href="?module=kepsek">Tugas Pokok dan Fungsi</a></li>
+						<li>&#8250; <a href="?module=kepsek">Tugas Pokok</a></li>
 					</ul>
 				</li>
 				<li class="upp"><a href="#">UPT Dinas</a>

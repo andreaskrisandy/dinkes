@@ -119,7 +119,6 @@
 				</div>
 
 				<div id="htmlcaption" class="nivo-html-caption">
-					<strong>This</strong> is an example of a HTML caption with <a href="#">a link</a>.
 				</div>
 
 			</div>
@@ -227,11 +226,9 @@
             </a>
           </div>
 				</div>
-
 				<br class="cleaner" />
 			</div>
 		</div>
-
 		<div id="templatemo_cr_bar_wrapper">
 			<div id="templatemo_cr_bar">
 				<strong>Copyright © 2017</strong> <a href="?page=main">Dinas Kesehatan Kota Bandung</a><strong></strong></a><br>
