@@ -1,5 +1,5 @@
 .ddsmoothmenu{
-	
+
 }
 
 .ddsmoothmenu ul{
@@ -26,7 +26,7 @@
 	padding: 0 15px;
 	line-height: 46px;
 	font-size: 11px;
-	color: #fff;	
+	color: #fff;
 	text-align: center;
 	text-decoration: none;
 	font-weight: 400;
@@ -39,7 +39,7 @@ display: inline-block;
 }
 
 .ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
-	color: #a4d659;
+	color: #ffffff;
 }
 /*1st sub level menu*/
 .ddsmoothmenu ul li ul{
@@ -48,9 +48,15 @@ display: inline-block;
 	left: 0;
 	display: none; /*collapse all sub menus to begin with*/
 	visibility: hidden;
-	background: url(../images/templatemo_submenu_m.png) repeat-y left;
+	background: url(../images/bg_submenu.jpg) repeat-y left;
 }
-.ddsmoothmenu ul li ul span { position: absolute; width: 170px; height: 15px; bottom: -15px; left: 0;  background: url(../images/templatemo_submenu_b.png) repeat-y; }
+.ddsmoothmenu ul li ul span {
+	position: absolute;
+	width: 170px;
+	height: 15px;
+	bottom: -15px;
+	left: 0;
+	background: url(../images/bgsubmenu_b.jpg) repeat-y; }
 
 /*Sub level menu list items (undo style from Top level List Items)*/
 .ddsmoothmenu ul li ul li{
