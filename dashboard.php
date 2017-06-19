@@ -89,7 +89,7 @@
 							<span></span>
 							<li><a href="?page=non-akademik&hal=pengurus-osis">Pengurus OSIS</a></li>
 							<li><a href="?page=non-akademik&hal=program-kerja-osis">Program Kerja OSIS</a></li>
-							<li><a href="?page=non-akademik&hal=ekstrakurikuler">Ekstrakurikuler</a></li>
+              <li><a href="?page=non-akademik&hal=ekstrakurikuler">Ekstrakurikuler</a></li>
 							<span></span>
 						</ul>
 					</li>
@@ -112,8 +112,9 @@
 
 				<div id="slider" class="nivoSlider">
           <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
+          <a href="#"><img src="images/slider/slide2.jpg" alt="Slider 05" /></a>
           <a href="#"><img src="images/slider/slide3.jpg" alt="Slider 05" /></a>
-          <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
+          <a href="#"><img src="images/slider/slide4.jpg" alt="Slider 05" /></a>
 				</div>
 
 				<div id="htmlcaption" class="nivo-html-caption">
@@ -176,6 +177,58 @@
 					<h2 id="soConnector"><center>Web Statistik</center></h2>
 					<br class="cleaner" />
 					<div id="webstat"><?php include("include/counter.php"); ?></div>
+          <br class="cleaner" />
+          <div id="otherWeb">
+            <a href="http://www.depkes.go.id/" target="_blank" class="link one">
+              <div class="row">
+                <div>
+                  <img style="margin-left:90px;height:50px;width:50px;" src="images/kemenkes.png" alt="">
+                  <div style="margin-left:0px;">
+                    Kementrian Kesehatan Republik Indonesia
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <br class="cleaner" />
+          <div id="otherWeb">
+            <a href="http://www.diskes.jabarprov.go.id/" target="_blank" class="link one">
+              <div class="row">
+                <div>
+                  <img style="margin-left:90px;height:50px;width:50px;" src="images/provjab.png" alt="">
+                  <div style="margin-left:40px;">
+                    Dinkes Provinsi Jawa Barat
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <br class="cleaner" />
+          <div id="otherWeb">
+            <a href="http://www.bandung.go.id/" target="_blank" class="link one">
+              <div class="row">
+                <div>
+                  <img style="margin-left:90px;height:40px;width:50px;" src="images/bandung.png" alt="">
+                  <div style="margin-left:90px;">
+                    Bandung
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <br class="cleaner" />
+          <div id="otherWeb">
+            <a href="#" target="_blank" class="link one">
+              <div class="row">
+                <div>
+                  <img style="margin-left:90px;height:60px;width:50px;" src="images/spgdt.png" alt="">
+                  <div style="margin-left:80px;">
+                    SPGDT 119
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 				</div>
 
 				<br class="cleaner" />

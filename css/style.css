@@ -238,6 +238,11 @@ div.detailer {
 	padding: 10px 10px 10px 45px;
 }
 
+#otherWeb{
+	border:1px dashed #888888;
+	padding: 5px 5px 5px 5px;
+}
+
 #slider img {
 	position:absolute;
 	top:0px;
@@ -725,3 +730,8 @@ a.nivo-prevNav {
 }
 
 #templatemo_cr_bar a { color: #888 }
+
+.logoDash img{
+	height:100px;
+	width:100px;
+}
