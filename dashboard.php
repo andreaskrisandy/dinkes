@@ -69,7 +69,7 @@
 					<li><a href="#">UPT Dinas</a>
 						<ul>
 							<span></span>
-							<li><a href="?page=informasi-kurikulum">UPT Dinas</a></li>
+							<li><a href="?page=informasi-kurikulum">UPT Puskesmas</a></li>
 							<li><a href="?page=guru">Puskesmas</a></li>
 							<li><a href="?page=siswa">Laboratorium</a></li>
 							<!--<li><a href="#">Tambahan</a>
@@ -170,10 +170,6 @@
 						}
 					?>
 				</div>
-        <div class="">
-          <h2>Pengumuman</h2>
-        </div>
-
 				<div class="col_right float_r">
 					<h2><center><?php echo $today; ?></center></h2>
 					<br class="cleaner" />
