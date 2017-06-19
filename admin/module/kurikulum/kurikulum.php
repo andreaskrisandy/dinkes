@@ -35,23 +35,23 @@
 						<input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>" />
 						<table class="admin" cellspacing="5px">
 							<tr>
-								<td><label>1</label></td>
+								<td><label>Nama Puskesmas</label></td>
 								<td><input type="text" name="ks" size="80" value="<?php echo $data["ks"]; ?>" /></td>
 							</tr>
 							<tr>
-								<td><label>2</label></td>
+								<td><label>Penagggung Jawab</label></td>
 								<td><input type="text" name="mapel" size="80" value="<?php echo $data["mapel"]; ?>" /></td>
 							</tr>
 							<tr>
-								<td><label>3</label></td>
+								<td><label>Alamat</label></td>
 								<td><textarea name="standar"><?php echo $data["standar"]; ?></textarea></td>
 							</tr>
 							<tr>
-								<td><label>4</label></td>
+								<td><label>Telepon</label></td>
 								<td><textarea name="kompetensi"><?php echo $data["kompetensi"]; ?></textarea></td>
 							</tr>
 							<tr>
-								<td><label>5</label></td>
+								<td><label>Pelayanan Unggulan</label></td>
 								<td><textarea name="tambahan"><?php echo $data["tambahan"]; ?></textarea></td>
 							</tr>
 							<tr>
@@ -76,23 +76,23 @@
 					<form action="module/kurikulum/action.php" method="post">
 						<table class="admin" cellspacing="5px">
 							<tr>
-								<td><label>1</label></td>
+								<td><label>Nama Puskesmas</label></td>
 								<td><input type="text" name="ks" size="80" /></td>
 							</tr>
 							<tr>
-								<td><label>2</label></td>
+								<td><label>Penganggung Jawab</label></td>
 								<td><input type="text" name="mapel" size="80" /></td>
 							</tr>
 							<tr>
-								<td><label>3</label></td>
+								<td><label>Alamat</label></td>
 								<td><textarea name="standar"></textarea></td>
 							</tr>
 							<tr>
-								<td><label>4</label></td>
+								<td><label>Telepon</label></td>
 								<td><textarea name="kompetensi"></textarea></td>
 							</tr>
 							<tr>
-								<td><label>5</label></td>
+								<td><label>Pelayanan Unggulan</label></td>
 								<td><textarea name="tambahan"></textarea></td>
 							</tr>
 							<tr>
