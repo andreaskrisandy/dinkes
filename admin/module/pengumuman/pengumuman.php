@@ -1,5 +1,5 @@
 <?php
-	$query = mysql_query("select * from page where page_id='1'");
+	$query = mysql_query("select * from page where page_id='5'");
 	$data = mysql_fetch_array($query);
 ?>
 <script type="text/javascript" src="tinymcpuk/tiny_mce_src.js"></script>
@@ -9,7 +9,7 @@
 	<form action="module/main/action.php" method="post">
 		<table>
 			<tbody>
-				<tr><td><textarea name="sambutan" ><?php echo $data['page_content']; ?></textarea></td></tr>
+				<tr><td><textarea name="berita" ><?php echo $data['page_content']; ?></textarea></td></tr>
 				<tr><td>&nbsp;</td></tr>
 				<tr><td><button type="submit" name="submit" class="ok">Update</button></td></tr>
 			</tbody>
