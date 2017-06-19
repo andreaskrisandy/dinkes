@@ -3,7 +3,7 @@
 		default:
 			?>
 				<div class="full_w">
-				<div class="h_title"><b>Manajemen Data Kurikulum</b></div>
+				<div class="h_title"><b>Manajemen Data Kurikulum Coi</b></div>
 				<button type="submit" name="submit" class="ok1" onclick="window.location='?module=kurikulum&mode=add'">Tambah</button>
 			<?php
 			echo "<table class=\"admin\" border=\"0\" cellpadding=\"5px\" cellspacing=\"1px\"><thead>
@@ -34,7 +34,7 @@
 						<input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>" />
 						<table class="admin" cellspacing="5px">
 							<tr>
-								<td><label>Kelas/Semester</label></td>
+								<td><label>Contoh datax</label></td>
 								<td><input type="text" name="ks" size="80" value="<?php echo $data["ks"]; ?>" /></td>
 							</tr>
 							<tr>
@@ -67,11 +67,11 @@
 		case "add":
 			?>
 				<div class="full_w">
-				<div class="h_title"><b>Manajemen Data Kurikulum</b></div>
+				<div class="h_title"><b>Manajemen Data Kurikulum Coiii</b></div>
 					<form action="module/kurikulum/action.php" method="post">
 						<table class="admin" cellspacing="5px">
 							<tr>
-								<td><label>Kelas/Semester</label></td>
+								<td><label>Contoh Data Tampil</label></td>
 								<td><input type="text" name="ks" size="80" /></td>
 							</tr>
 							<tr>
