@@ -181,53 +181,46 @@
             <a class="twitter-timeline" data-width="250" data-height="250" data-theme="light" href="https://twitter.com/Bandung_Dinkes">Tweets by Bandung_Dinkes</a>
           </div>
           <br class="cleaner" />
-          <div id="otherWeb">
+          <h2><center>Website Terkait</center></h2>
+          <div id="otherWeb" style="height:40px;">
             <a href="http://www.depkes.go.id/" target="_blank" class="link one">
-              <div class="row">
-                <div>
-                  <img style="margin-left:90px;height:50px;width:50px;" src="images/kemenkes.png" alt="">
-                  <div style="margin-left:0px;">
-                    Kementrian Kesehatan Republik Indonesia
-                  </div>
+              <div style="height:auto;">
+                <img style="margin-left:2%;float:left;height:40px;width:40px;" src="images/kemenkes.png" alt="">
+                <div style="margin-left:60px;">
+                  Kementrian Kesehatan Republik Indonesia
                 </div>
               </div>
             </a>
           </div>
           <br class="cleaner" />
-          <div id="otherWeb">
+          <div id="otherWeb" style="height:40px;">
             <a href="http://www.diskes.jabarprov.go.id/" target="_blank" class="link one">
-              <div class="row">
-                <div>
-                  <img style="margin-left:90px;height:50px;width:50px;" src="images/provjab.png" alt="">
-                  <div style="margin-left:40px;">
-                    Dinkes Provinsi Jawa Barat
-                  </div>
+              <div style="height:auto;">
+                <img style="margin-left:2%;float:left;height:40px;width:40px;" src="images/provjab.png" alt="">
+                <div style="margin-left:60px;">
+                  Dinkes Provinsi Jawa Barat
                 </div>
               </div>
             </a>
           </div>
           <br class="cleaner" />
-          <div id="otherWeb">
+          <div id="otherWeb" style="height:40px;">
             <a href="http://www.bandung.go.id/" target="_blank" class="link one">
-              <div class="row">
-                <div>
-                  <img style="margin-left:90px;height:40px;width:50px;" src="images/bandung.png" alt="">
-                  <div style="margin-left:90px;">
-                    Bandung
-                  </div>
+              <div style="height:auto;">
+                <img style="margin-left:2%;float:left;height:35px;width:40px;" src="images/bandung.png" alt="">
+                <div style="margin-left:60px;">
+                  Portal Kota Bandung
                 </div>
               </div>
             </a>
           </div>
           <br class="cleaner" />
-          <div id="otherWeb">
+          <div id="otherWeb" style="height:40px;">
             <a href="#" target="_blank" class="link one">
-              <div class="row">
-                <div>
-                  <img style="margin-left:90px;height:60px;width:50px;" src="images/spgdt.png" alt="">
-                  <div style="margin-left:80px;">
-                    SPGDT 119
-                  </div>
+              <div style="height:auto;">
+                <img style="margin-left:2%;float:left;height:40px;width:40px;" src="images/spgdt.png" alt="">
+                <div style="margin-left:60px;">
+                  SPGDT 119
                 </div>
               </div>
             </a>
