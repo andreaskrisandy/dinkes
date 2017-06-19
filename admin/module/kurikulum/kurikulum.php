@@ -50,6 +50,10 @@
 								<td><textarea name="kompetensi"><?php echo $data["kompetensi"]; ?></textarea></td>
 							</tr>
 							<tr>
+								<td><label>Tambahan ini mah</label></td>
+								<td><textarea name="tambahan"><?php echo $data["tambahan"]; ?></textarea></td>
+							</tr>
+							<tr>
 								<td>&nbsp;</td>
 								<td>&nbsp;</td>
 							</tr>
@@ -85,6 +89,10 @@
 							<tr>
 								<td><label>Kompetensi Dasar</label></td>
 								<td><textarea name="kompetensi"></textarea></td>
+							</tr>
+							<tr>
+								<td><label>Tambahan</label></td>
+								<td><textarea name="tambahan"></textarea></td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
