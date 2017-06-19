@@ -72,7 +72,7 @@
 							<li><a href="?page=informasi-kurikulum">UPT Dinas</a></li>
 							<li><a href="?page=guru">Puskesmas</a></li>
 							<li><a href="?page=siswa">Laboratorium</a></li>
-							<li><a href="#">Tambahan</a>
+							<!--<li><a href="#">Tambahan</a>
 								<ul style="width: 100%; margin-top: 90px; border-radius: 5px; border-bottom: none">
 									<?php
 										$qkelas = mysql_query("select * from kelas order by kelas_id desc");
@@ -81,22 +81,22 @@
 										}
 									?>
 								</ul>
-							</li>
-							<span></span>
-						</ul>
-					</li>
-					<li><a href="#">Non Akademik</a>
-						<ul>
-							<span></span>
-							<li><a href="?page=non-akademik&hal=pengurus-osis">Pengurus OSIS</a></li>
-							<li><a href="?page=non-akademik&hal=program-kerja-osis">Program Kerja OSIS</a></li>
-              <li><a href="?page=non-akademik&hal=ekstrakurikuler">Ekstrakurikuler</a></li>
+							</li>-->
 							<span></span>
 						</ul>
 					</li>
 					<li><a href="?page=galeri">Galeri</a></li>
-					<li><a href="?page=buku-tamu">Buku Tamu</a></li>
+          <li><a href="#">Download</a>
+						<ul>
+							<span></span>
+							<li><a href="?page=non-akademik&hal=pengurus-osis">Data A</a></li>
+							<li><a href="?page=non-akademik&hal=program-kerja-osis">Data B</a></li>
+              <li><a href="?page=non-akademik&hal=ekstrakurikuler">Data C</a></li>
+							<span></span>
+						</ul>
+					</li>
           <li><a href="?page=psc119">PSC 119</a></li>
+          <li><a href="?page=buku-tamu">Kontak Kami</a></li>
 				</ul>
 				<br style="clear: left" />
 			</div>
