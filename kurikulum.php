@@ -4,20 +4,20 @@
 		$('#Table').dataTable( {
 			"oLanguage": {
 				"sLengthMenu": "Tampilkan _MENU_ Data Per Halaman",
-				"sSearch": "Pencarian Data", 
+				"sSearch": "Pencarian Data",
 				"sZeroRecords": "Tidak Ada Data Yang Ditemukan",
 				"sInfo": "Menampilkan _START_ - _END_ Dari _TOTAL_ Data",
 				"sInfoEmpty": "Menampilkan 0 Dari 0 Data",
 				"sInfoFiltered": "",
 				"oPaginate": {
-					"sPrevious": "", 
+					"sPrevious": "",
 					"sNext": ""
 				}
-			}	
+			}
 		} );
 	} );
 </script>
-<h2>Informasi Kurikulum Madrasah Aliah Negeri (MAN) 2 Kota Bengkulu</h2>
+<h2>Informasi Data Puskesmas di Kota Bandung</h2>
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="Table">
 	<thead>
 		<tr>
