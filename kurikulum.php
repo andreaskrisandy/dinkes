@@ -48,14 +48,4 @@
 		}
 	?>
 	</tbody>
-	<tfoot>
-		<tr>
-			<th>No</th>
-			<th>Puskesmas</th>
-			<th>Kepala Puskesmas</th>
-			<th>Alamat</th>
-			<th>Telepon</th>
-			<th>Pelayanan Unggulan</th>
-		</tr>
-	</tfoot>
 </table>
