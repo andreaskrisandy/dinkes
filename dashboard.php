@@ -60,18 +60,18 @@
 							<span></span>
 							<li><a href="?page=sejarah">Sejarah</a></li>
 							<li><a href="?page=visi-misi">Visi &amp; Misi</a></li>
-							<li><a href="?page=struktur-organisasi">Struktur Organisasi</a></li>
-							<li><a href="?page=profil-kepala-sekolah">Profil Kepala Sekolah</a></li>
+							<li><a href="?page=struktur-organisasi">Struktur Organisani</a></li>
+							<li><a href="?page=profil-kepala-sekolah">Tugas Pokok dan Fungsi</a></li>
 							<span></span>
 						</ul>
 					</li>
-					<li><a href="#">Akademik</a>
+					<li><a href="#">UPT Dinas</a>
 						<ul>
 							<span></span>
-							<li><a href="?page=informasi-kurikulum">Informasi Kurikulum</a></li>
-							<li><a href="?page=guru">Data Guru</a></li>
-							<li><a href="?page=siswa">Data Siswa</a></li>
-							<li><a href="#">Jadwal Pelajaran</a>
+							<li><a href="?page=informasi-kurikulum">UPT Dinas</a></li>
+							<li><a href="?page=guru">Puskesmas</a></li>
+							<li><a href="?page=siswa">Laboratorium</a></li>
+							<li><a href="#">Tambahan</a>
 								<ul style="width: 100%; margin-top: 90px; border-radius: 5px; border-bottom: none">
 									<?php
 										$qkelas = mysql_query("select * from kelas order by kelas_id desc");
@@ -95,6 +95,7 @@
 					</li>
 					<li><a href="?page=galeri">Galeri</a></li>
 					<li><a href="?page=buku-tamu">Buku Tamu</a></li>
+          <li><a href="?page=psc119">PSC 119</a></li>
 				</ul>
 				<br style="clear: left" />
 			</div>
@@ -156,6 +157,8 @@
 								include('tamu.php');
 							} elseif ($page == 'kontak'){
 								include('kontak.php');
+              } elseif ($page == 'psc119'){
+                include('psc199.php');
 							} elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
@@ -234,7 +237,8 @@
 
 		<div id="templatemo_cr_bar_wrapper">
 			<div id="templatemo_cr_bar">
-				<strong>Copyright © 2014</strong> <a href="?page=main">Madrasah Aliah Negeri (MAN) 2 Kota Bengkulu</a> | Developed by <strong>Hdroot</strong> | Publish by <a href="http://sedotcode.blogspot.com/">Sedot Free SourceCode</a> | All Rights Reserved
+				<strong>Copyright © 2017</strong> <a href="?page=main">Dinas Kesehatan Kota Bandung</a><strong></strong></a><br>
+        <strong>Jl. Supratman No 73 Citarum Bandung, Tlp 022-7202210, Cihapit, Bandung Wetan, Bandung City, West Java 40114</strong>
 			</div>
 		</div>
 	</body>
