@@ -15,7 +15,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Admin Panel</title>
-<link rel="shortcut icon" href="img/icon.jpg">
+<link rel="shortcut icon" href="img/bandung.png">
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/navi.css" media="screen" />
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -42,16 +42,17 @@
 					<ul>
 						<li>&#8250; <a href="?module=history">Sejarah</a></li>
 						<li>&#8250; <a href="?module=vision">Visi &amp; Misi</a></li>
-						<li>&#8250; <a href="?module=kepsek">Profil Kepala Sekolah</a></li>
+						<li>&#8250; <a href="?module=kepsek">Struktur Organisasi</a></li>
+						<li>&#8250; <a href="?module=kepsek">Tugas Pokok dan Fungsi</a></li>
 					</ul>
 				</li>
-				<li class="upp"><a href="#">Akademik</a>
+				<li class="upp"><a href="#">UPT Dinas</a>
 					<ul>
-						<li>&#8250; <a href="?module=kurikulum">Informasi Kurikulum</a></li>
-						<li>&#8250; <a href="?module=teacher">Data Guru</a></li>
-						<li>&#8250; <a href="?module=student">Data Siswa</a></li>
-						<li>&#8250; <a href="?module=kelas">Data Kelas</a></li>
-						<li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li>
+						<li>&#8250; <a href="?module=kurikulum">UPT Dinas</a></li>
+						<li>&#8250; <a href="?module=teacher">Puskesmas</a></li>
+						<li>&#8250; <a href="?module=student">Laboratorium</a></li>
+						<!-- <li>&#8250; <a href="?module=kelas">Data Kelas</a></li> -->
+						<!-- <li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li> -->
 					</ul>
 				</li>
 				<li class="upp"><a href="#">Non Akademik</a>
