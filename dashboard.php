@@ -89,7 +89,7 @@
 							<span></span>
 							<li><a href="?page=non-akademik&hal=pengurus-osis">Pengurus OSIS</a></li>
 							<li><a href="?page=non-akademik&hal=program-kerja-osis">Program Kerja OSIS</a></li>
-							<li><a href="?page=non-akademik&hal=ekstrakurikuler">Ekstrakurikuler</a></li>
+              <li><a href="?page=non-akademik&hal=ekstrakurikuler">Ekstrakurikuler</a></li>
 							<span></span>
 						</ul>
 					</li>
@@ -111,8 +111,9 @@
 
 				<div id="slider" class="nivoSlider">
           <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
-          <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
-          <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
+          <a href="#"><img src="images/slider/slide2.jpg" alt="Slider 05" /></a>
+          <a href="#"><img src="images/slider/slide3.jpg" alt="Slider 05" /></a>
+          <a href="#"><img src="images/slider/slide4.jpg" alt="Slider 05" /></a>
 				</div>
 
 				<div id="htmlcaption" class="nivo-html-caption">
