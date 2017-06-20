@@ -69,9 +69,10 @@
 					<li><a href="#">UPT Dinas</a>
 						<ul>
 							<span></span>
-							<li><a href="?page=informasi-kurikulum">UPT Puskesmas</a></li>
-							<li><a href="?page=guru">Puskesmas</a></li>
-							<li><a href="?page=siswa">Laboratorium</a></li>
+							<li><a href="?page=informasi-kurikulum">Puskesmas</a></li>
+							<li><a href="?page=rumahsakit">Rumah Sakit</a></li>
+							<li><a href="?page=labkesda">Lab Kesda</a></li>
+							<li><a href="?page=yankesmob">Yankesmob</a></li>
 							<!--<li><a href="#">Tambahan</a>
 								<ul style="width: 100%; margin-top: 90px; border-radius: 5px; border-bottom: none">
 									<?php
@@ -89,13 +90,15 @@
           <li><a href="#">Download</a>
 						<ul>
 							<span></span>
-							<li><a href="?page=non-akademik&hal=pengurus-osis">Data A</a></li>
-							<li><a href="?page=non-akademik&hal=program-kerja-osis">Data B</a></li>
-              <li><a href="?page=non-akademik&hal=ekstrakurikuler">Data C</a></li>
+							<!-- <li><a href="?page=non-akademik&hal=pengurus-osis">Permenkes</a></li> -->
+							<li><a href="?page=permenkes">Permenkes</a></li>
+							<!-- <li><a href="?page=non-akademik&hal=program-kerja-osis">Profil Dinas</a></li> -->
+							<li><a href="?page=profildinas">Profil Dinas</a></li>
+              <li><a href="?page=anggaran">Anggaran</a></li>
 							<span></span>
 						</ul>
 					</li>
-          <li><a href="?page=psc119">PSC 119</a></li>
+          <!-- <li><a href="?page=psc119">PSC 119</a></li> -->
           <li><a href="?page=buku-tamu">Kontak Kami</a></li>
 				</ul>
 				<br style="clear: left" />
@@ -145,20 +148,28 @@
 								include('kelas.php');
 							} elseif ($page == 'guru'){
 								include('guru.php');
-							} elseif ($page == 'siswa'){
-								include('siswa.php');
+							} elseif ($page == 'anggaran'){
+								include('anggaran.php');
+							} elseif ($page == 'profildinas'){
+								include('profildinas.php');
+							} elseif ($page == 'permenkes'){
+								include('permenkes.php');
+							} elseif ($page == 'labkesda'){
+								include('labkesda.php');
 							} elseif ($page == 'jadwal-pelajaran'){
 								include('jadwal.php');
 							} elseif ($page == 'non-akademik'){
 								include('non-akademik.php');
+							} elseif ($page == 'rumahsakit'){
+								include('rumahsakit.php');
 							} elseif ($page =='galeri'){
 								include('galeri.php');
 							} elseif ($page == 'buku-tamu'){
 								include('tamu.php');
 							} elseif ($page == 'kontak'){
 								include('kontak.php');
-              } elseif ($page == 'psc119'){
-                include('psc199.php');
+              } elseif ($page == 'yankesmob'){
+                include('yankesmob.php');
 							} elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
