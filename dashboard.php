@@ -216,7 +216,7 @@
           </div>
           <br class="cleaner" />
           <div id="otherWeb" style="height:40px;">
-            <a href="#" target="_blank" class="link one">
+            <a href="https://twitter.com/Bdgemergency/media" target="_blank" class="link one">
               <div style="height:auto;">
                 <img style="margin-left:2%;float:left;height:40px;width:40px;" src="images/spgdt.png" alt="">
                 <div style="margin-left:60px;">
