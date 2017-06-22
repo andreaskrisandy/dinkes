@@ -62,6 +62,15 @@
 						<!-- <li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li> -->
 					</ul>
 				</li>
+				<li class="upp"><a href="#">Download</a>
+					<ul>
+						<li>&#8250; <a href="?module=permenkes">Permenkes</a></li>
+						<li>&#8250; <a href="?module=profildinas">Profil Dinas</a></li>
+						<li>&#8250; <a href="?module=anggaran">Anggaran</a></li>
+						<!-- <li>&#8250; <a href="?module=kelas">Data Kelas</a></li> -->
+						<!-- <li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li> -->
+					</ul>
+				</li>
 				<li class="upp"><a href="#">Non Akademik</a>
 					<ul>
 						<li>&#8250; <a href="?module=non-akademik&id=1">Pengurus OSIS</a></li>
@@ -96,9 +105,15 @@
 						include("module/kelas/kelas.php");
 					} elseif ($module == 'jadwal'){
 						include("module/jadwal/jadwal.php");
-					} elseif ($module == 'non-akademik'){
+					} elseif ($module == 'permenkes'){
+						include("module/download/b_permenkes.php");
+					}elseif ($module == 'profildinas'){
+						include("module/download/b_profildinas.php");
+					}elseif ($module == 'anggaran'){
+						include("module/download/b_anggaran.php");
+					}elseif ($module == 'non-akademik'){
 						include("module/non-akademik/non-akademik.php");
-					} elseif ($module == 'teacher'){
+					}elseif ($module == 'teacher'){
 						include("module/teacher/teacher.php");
 					} elseif ($module == 'student'){
 						include("module/student/student.php");
@@ -123,7 +138,7 @@
 	</div>
 	<div id="footer">
 		<div class="left">
-			<p><strong>Copyright &copy; 2014</strong> - All Rights Reserved</p>
+			<p><strong>Copyright &copy; 2017</strong> - All Rights Reserved</p>
 		</div>
 		<div class="right">
 			<p><strong><a href="?module=main">Admin Panel</a></strong></p>
