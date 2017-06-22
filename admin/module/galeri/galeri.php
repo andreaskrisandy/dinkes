@@ -13,7 +13,7 @@
 			while ($data = mysql_fetch_array($query)){
 				echo "<tbody><tr bgcolor=\"#ffffff\">";
 					echo "<td align=\"center\">$no</td>";
-					echo "<td>$data[judul]</td>";
+					echo "<td style=\"width: 20%;\">$data[judul]</td>";
 					echo "<td>$data[deskripsi]</td>";
 					echo "<td align=\"center\"><a title=\"Edit\" class=\"table-icon edit\" href=\"?module=galeri&mode=edit&id=$data[id]\"></a>&nbsp;&nbsp;&nbsp;<a title=\"Hapus\" class=\"table-icon delete\"href=\"?module=galeri&mode=delete&id=$data[id]\"></a></td>";
 				echo "</tr></tbody>";
