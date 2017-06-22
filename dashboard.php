@@ -15,6 +15,7 @@
 		<link rel="shortcut icon" href="images/bandung.png">
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/nivo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/sexy-icon.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/table.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 		<link rel="stylesheet" type="text/css" href="css/jsdatepick.css" />
@@ -244,6 +245,15 @@
 			<div id="templatemo_cr_bar">
 				<strong>Copyright © 2017</strong> <a href="?page=main">Dinas Kesehatan Kota Bandung</a><strong></strong></a><br>
         <strong>Jl. Supratman No 73 Citarum Bandung, Tlp 022-7202210, Cihapit, Bandung Wetan, Bandung City, West Java 40114</strong>
+        <div class="footer-social-icons">
+          <strong>Ikuti Kami di Social Media</strong>
+          <ul class="social-icons">
+            <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
 			</div>
 		</div>
 	</body>
