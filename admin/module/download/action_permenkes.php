@@ -27,7 +27,7 @@
 			mysql_query("update permenkes set nama_permenkes = '$_POST[nama_permenkes]', tahun_permenkes = '$_POST[tahun_permenkes]', deskripsi_permenkes = '$_POST[deskripsi_permenkes]', keterangan_permenkes = '$newName' where id = '$_POST[id_permenkes]'");
 			header("location: ../../dashboard.php?module=b_permenkes");
 		} else {
-			mysql_query("update permenkes set nama_permenkes = '$_POST[nama_permenkes]',tahun_permenkes = '$_POST[tahun_permenkes]' deskripsi_permenkes = '$_POST[deskripsi_permenkes]' where id = '$_POST[id_permenkes]'");
+			mysql_query("update permenkes set nama_permenkes = '$_POST[nama_permenkes]',tahun_permenkes = '$_POST[tahun_permenkes]', deskripsi_permenkes = '$_POST[deskripsi_permenkes]' where id = '$_POST[id_permenkes]'");
 			header("location: ../../dashboard.php?module=b_permenkes");
 		}
 	}
