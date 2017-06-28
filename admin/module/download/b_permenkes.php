@@ -83,7 +83,7 @@
 							</tr>
 							<tr>
 								<td><label>File Permenkes</label></td>
-								<td><input type="file" name="keterangan_permenkes" /> &nbsp; &nbsp;Document</td>
+								<td><input type="file" name="permenkes" /> &nbsp; &nbsp;Document</td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
