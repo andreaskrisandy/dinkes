@@ -7,7 +7,7 @@
 		$imgType	= $_FILES['anggaran']['type'];
 		$imgName	= $_FILES['anggaran']['name'];
 		$random		= rand(1,99);
-		$newName	= $imgName . $imgType;
+		$newName	= $random . $imgName;
 		Galeri($newName);
 		mysql_query("insert into anggaran values ('','$_POST[nama_dpa]','$_POST[tahun_anggaran]','$_POST[deskripsi_anggaran]','$newName')");
 		header("location: ../../dashboard.php?module=b_anggaran");
@@ -19,7 +19,7 @@
 			$imgType	= $_FILES['anggaran']['type'];
 			$imgName	= $_FILES['anggaran']['name'];
 			$random		= rand(1,99);
-			$newName	= $imgName . $imgType;
+			$newName	= $random . $imgName;
 			Galeri($newName);
 			$query = mysql_query("select * from anggaran where id = '$_POST[id_anggaran]'");
 			$data = mysql_fetch_array($query);

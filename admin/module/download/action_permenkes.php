@@ -7,8 +7,8 @@
 		$imgType	= $_FILES['permenkes']['type'];
 		$imgName	= $_FILES['permenkes']['name'];
 		$random		= rand(1,99);
-		$newName	= $imgName . $imgType;
-		Galeri($newName);
+		$newName	= $random . $imgName;
+		Download($newName);
 		mysql_query("insert into permenkes values ('','$_POST[nama_permenkes]','$_POST[tahun_permenkes]','$_POST[deskripsi_permenkes]','$newName')");
 		header("location: ../../dashboard.php?module=b_permenkes");
 	}
@@ -19,8 +19,8 @@
 			$imgType	= $_FILES['permenkes']['type'];
 			$imgName	= $_FILES['permenkes']['name'];
 			$random		= rand(1,99);
-			$newName	= $imgName . $imgType;
-			Galeri($newName);
+			$newName	= $random . $imgName;
+			Download($newName);
 			$query = mysql_query("select * from permenkes where id = '$_POST[id_permenkes]'");
 			$data = mysql_fetch_array($query);
 			unlink("../../../download/$data[keterangan_permenkes]");

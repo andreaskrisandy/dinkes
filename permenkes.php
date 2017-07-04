@@ -40,6 +40,7 @@
 						<td>$permenkes[tahun_permenkes]</td>
 						<td>$permenkes[deskripsi_permenkes]</td>
 						<td>$permenkes[keterangan_permenkes]</td>
+						
 					</tr>
 					";
 			$no++;

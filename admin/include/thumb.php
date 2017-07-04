@@ -62,4 +62,40 @@
 		imagedestroy($im_src);
 		imagedestroy($im);
 	}
+
+	function Download($fupload_name){
+		$vdir_upload = "../../../download/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["permenkes"]["tmp_name"], $vfile_upload);
+	}
+
+	function Profildinas($fupload_name){
+		$vdir_upload = "../../../download/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["profildinas"]["tmp_name"], $vfile_upload);
+	}
+
+	function Anggaran($fupload_name){
+		$vdir_upload = "../../../download/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["anggaran"]["tmp_name"], $vfile_upload);
+	}
+
+	function Pengumuman($fupload_name){
+		$vdir_upload = "../../../dashboard/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["pengumuman"]["tmp_name"], $vfile_upload);
+	}
+
+	function Artikelkesehatan($fupload_name){
+		$vdir_upload = "../../../dashboard/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["artikelkesehatan"]["tmp_name"], $vfile_upload);
+	}
+
+	function Promosikesehatan($fupload_name){
+		$vdir_upload = "../../../dashboard/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["promosikesehatan"]["tmp_name"], $vfile_upload);
+	}
 ?>
