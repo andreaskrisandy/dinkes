@@ -23,7 +23,7 @@
 			echo "</div>";
 		break;
 		case "edit":
-			$query = mysql_query("select * from profildinas where id = '$_GET[id_profildinas]'");
+			$query = mysql_query("select * from profildinas where id_profildinas = '$_GET[id]'");
 			$data = mysql_fetch_array($query);
 			?>
 				<div class="full_w">
