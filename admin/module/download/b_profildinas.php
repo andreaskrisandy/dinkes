@@ -92,7 +92,7 @@
 			<?php
 		break;
 		case "delete":
-			mysql_query("delete from profildinas where id = '$_GET[id]'");
+			mysql_query("delete from profildinas where id_profildinas = '$_GET[id]'");
 			header("location: ?module=profildinas");
 		break;
 	}
