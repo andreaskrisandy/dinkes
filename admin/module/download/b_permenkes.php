@@ -101,7 +101,7 @@
 			<?php
 		break;
 		case "delete":
-			mysql_query("delete from permenkes where id = '$_GET[id]'");
+			mysql_query("delete from permenkes where id_permenkes = '$_GET[id]'");
 			header("location: ?module=permenkes");
 		break;
 	}
