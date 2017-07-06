@@ -10,7 +10,7 @@
 		$newName	= $random . $imgName;
 		Profildinas($newName);
 		mysql_query("insert into profildinas values ('','$_POST[nama_profildinas]','$_POST[deskripsi_profildinas]','$newName')");
-		header("location: ../../dashboard.php?module=b_profildinas");
+		header("location: ../../dashboard.php?module=profildinas");
 	}
 
 	if (isset($_POST['edit'])){
