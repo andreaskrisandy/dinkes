@@ -40,9 +40,12 @@
 				<li class="upp"><a href="?module=main">Berita Terbaru</a></li>
         <li class="upp"><a href="#">Dashboard</a>
 					<ul>
-						<li>&#8250; <a href="?module=non-akademik&id=1">Pengumuman</a></li>
+						<!-- <li>&#8250; <a href="?module=non-akademik&id=1">Pengumuman</a></li>
 						<li>&#8250; <a href="?module=non-akademik&id=2">Artikel Kesehatan</a></li>
-						<li>&#8250; <a href="?module=non-akademik&id=3">Promosi Kesehatan</a></li>
+						<li>&#8250; <a href="?module=non-akademik&id=3">Promosi Kesehatan</a></li> -->
+						<li>&#8250; <a href="?module=pengumuman">Pengumuman</a></li>
+						<li>&#8250; <a href="?module=artikelkesehatan">Artikel Kesehatan</a></li>
+						<li>&#8250; <a href="?module=promosikesehatan">Promosi Kesehatan</a></li>
 					</ul>
 				</li>
 				<li class="upp"><a href="#">Profil</a>
@@ -111,6 +114,12 @@
 						include("module/download/b_profildinas.php");
 					}elseif ($module == 'anggaran'){
 						include("module/download/b_anggaran.php");
+					}elseif ($module == 'pengumuman'){
+						include("module/dashboard/pengumuman.php");
+					}elseif ($module == 'promosikesehatan'){
+						include("module/dashboard/promosikesehatan.php");
+					}elseif ($module == 'artikelkesehatan'){
+						include("module/dashboard/artikelkesehatan.php");
 					}elseif ($module == 'non-akademik'){
 						include("module/non-akademik/non-akademik.php");
 					}elseif ($module == 'teacher'){
