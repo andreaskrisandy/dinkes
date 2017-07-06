@@ -24,7 +24,7 @@
 			echo "</div>";
 		break;
 		case "edit":
-			$query = mysql_query("select * from permenkes where id = '$_GET[id_permenkes]'");
+			$query = mysql_query("select * from permenkes where id_permenkes = '$_GET[id]'");
 			$data = mysql_fetch_array($query);
 			?>
 				<div class="full_w">
@@ -101,7 +101,7 @@
 			<?php
 		break;
 		case "delete":
-			mysql_query("delete from permenkes where id = '$_GET[id]'");
+			mysql_query("delete from permenkes where id_permenkes = '$_GET[id]'");
 			header("location: ?module=permenkes");
 		break;
 	}
