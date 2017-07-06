@@ -33,16 +33,17 @@
 		$no = 1;
 		$query = mysql_query("select * from permenkes order by id_permenkes desc");
 		while ($permenkes = mysql_fetch_array($query)) {
-			echo    "
+			?>
 					<tr>
-						<td>$no</td>
-						<td>$permenkes[nama_permenkes]</td>
-						<td>$permenkes[tahun_permenkes]</td>
-						<td>$permenkes[deskripsi_permenkes]</td>
-						<td>$permenkes[keterangan_permenkes]</td>
-						
+						<td style="text-align:center;"><?= $no ?></td>
+						<td style="text-align:center;"><?=$permenkes[nama_permenkes] ?></td>
+						<td style="text-align:center;"><?=$permenkes[tahun_permenkes]?></td>
+						<td style="text-align:center;"><?=$permenkes[deskripsi_permenkes] ?></td>
+						<td style="text-align:center;">
+							<a href="download/<?=$permenkes[keterangan_permenkes]?>" download>Download File</a>
+						</td>
 					</tr>
-					";
+					<?php
 			$no++;
 		}
 	?>

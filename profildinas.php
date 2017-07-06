@@ -32,14 +32,16 @@
 		$no = 1;
 		$query = mysql_query("select * from profildinas order by id_profildinas desc");
 		while ($profildinas = mysql_fetch_array($query)) {
-			echo    "
+			?>
 					<tr>
-						<td>$no</td>
-						<td>$profildinas[nama_profildinas]</td>
-						<td>$profildinas[deskripsi_profildinas]</td>
-						<td>$profildinas[keterangan_profildinas]</td>
+						<td style="text-align:center;"><?= $no ?></td>
+						<td style="text-align:center;"><?=$profildinas[nama_profildinas]?></td>
+						<td style="text-align:center;"><?=$profildinas[deskripsi_profildinas]?></td>
+						<td style="text-align:center;">
+							<a href="download/<?=$profildinas[keterangan_profildinas]?>" download>Download File</a>
+						</td>
 					</tr>
-					";
+					<?php
 			$no++;
 		}
 	?>
