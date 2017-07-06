@@ -17,7 +17,29 @@ $beranda_data = mysql_fetch_array($beranda_query);
 echo "<h2>$beranda_data[page_title]</h2>";
 //echo "<img id=\"kepsek\" src=\"images/$kepsek_data[kepsek]\" width=\"175px\" height=\"175px\" />";
 echo "$beranda_data[page_content]";
+
+
  ?>
+ <?php
+$has = mysql_query("select * from pengumuman order by tgl_pengumuman desc");
+$num = mysql_num_rows($has);
+
+if($num<1){
+ echo'<center>Tidak Ada Artikel</center>';
+}else{
+while($data=mysql_fetch_array($has)){
+ $art = substr($data['isi_pengumuman'],0,100);
+  echo '
+     <h2>'.$data['judul_pengumuman'].'</h2>
+     <img width="330" height="280" src="download/'.$data['gambar_pengumuman'].'">
+     <h4>Di publikasikan pada '.$data['tgl_pengumuman'].'</h4>
+     <p>'.$art.'..</p>
+        <a href="single.php?p='.$data['id_pengumuman'].'">Read More</a>
+     <br><br>
+  
+   ';}
+}
+?>
 
  <?php
  $berita_query = mysql_query("select * from kepsek");

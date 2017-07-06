@@ -38,7 +38,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi Pengumuman</label></td>
-								<td><input type="text" name="isi_pengumuman" style="width: 100%" value="<?php echo $data["isi_pengumuman"]; ?>" /></td>
+								<!-- <td><input type="text" name="isi_pengumuman" style="width: 100%" value="<?php echo $data["isi_pengumuman"]; ?>" /></td> -->
+								<td><textarea name="isi_pengumuman"><?php echo $data["isi_pengumuman"]; ?></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar Pengumuman</label></td>
@@ -71,7 +72,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi Pengumuman</label></td>
-								<td><input type="text" name="isi_pengumuman" style="width: 100%" /></td>
+								<!-- <td><input type="text" name="isi_pengumuman" style="width: 100%" /></td> -->
+								<td><textarea name="isi_pengumuman"></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar Pengumuman</label></td>
