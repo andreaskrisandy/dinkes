@@ -38,7 +38,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi Promosi Kesehatan</label></td>
-								<td><input type="text" name="isi_promosikesehatan" style="width: 100%" value="<?php echo $data["isi_promosikesehatan"]; ?>" /></td>
+								<!-- <td><input type="text" name="isi_promosikesehatan" style="width: 100%" value="<?php echo $data["isi_promosikesehatan"]; ?>" /></td> -->
+								<td><textarea name="isi_promosikesehatan"><?php echo $data["isi_promosikesehatan"]; ?></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar Promosi Kesehatan</label></td>
@@ -71,7 +72,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi promosikesehatan</label></td>
-								<td><input type="text" name="isi_promosikesehatan" style="width: 100%" /></td>
+								<!-- <td><input type="text" name="isi_promosikesehatan" style="width: 100%" /></td> -->
+								<td><textarea name="isi_promosikesehatan"></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar promosikesehatan</label></td>

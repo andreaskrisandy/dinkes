@@ -12,7 +12,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="author" content="Paweł 'kilab' Balicki - kilab.pl" />
 <title>Admin Panel</title>
-<link rel="shortcut icon" href="img/icon.jpg">
+<link rel="shortcut icon" href="img/bandung.png">
 <link rel="stylesheet" type="text/css" href="css/login.css" media="screen" />
 </head>
 <body>

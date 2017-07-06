@@ -38,7 +38,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi Artikel Kesehatan</label></td>
-								<td><input type="text" name="isi_artikelkesehatan" style="width: 100%" value="<?php echo $data["isi_artikelkesehatan"]; ?>" /></td>
+								<!-- <td><input type="text" name="isi_artikelkesehatan" style="width: 100%" value="<?php echo $data["isi_artikelkesehatan"]; ?>" /></td> -->
+								<td><textarea name="isi_artikelkesehatan"><?php echo $data["isi_artikelkesehatan"]; ?></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar Artikel Kesehatan</label></td>
@@ -71,7 +72,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi artikelkesehatan</label></td>
-								<td><input type="text" name="isi_artikelkesehatan" style="width: 100%" /></td>
+								<!-- <td><input type="text" name="isi_artikelkesehatan" style="width: 100%" /></td> -->
+								<td><textarea name="isi_artikelkesehatan"></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar artikelkesehatan</label></td>
