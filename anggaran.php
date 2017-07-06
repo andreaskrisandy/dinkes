@@ -33,15 +33,17 @@
 		$no = 1;
 		$query = mysql_query("select * from anggaran order by id_anggaran desc");
 		while ($anggaran = mysql_fetch_array($query)) {
-			echo    "
+			?>
 					<tr>
-						<td>$no</td>
-						<td>$anggaran[nama_dpa]</td>
-						<td>$anggaran[tahun_anggaran]</td>
-						<td>$anggaran[deskripsi_anggaran]</td>
-						<td>$anggaran[keterangan_anggaran]</td>
+						<td style="text-align:center;"><?= $no?></td>
+						<td style="text-align:center;"><?= $anggaran[nama_dpa]?></td>
+						<td style="text-align:center;"><?= $anggaran[tahun_anggaran]?></td>
+						<td style="text-align:center;"><?= $anggaran[deskripsi_anggaran]?></td>
+						<td style="text-align:center;">
+							<a style="color:blue;" href="download/<?=$anggaran[keterangan_anggaran]?>" download>Download File</a>
+						</td>
 					</tr>
-					";
+					<?php
 			$no++;
 		}
 	?>
