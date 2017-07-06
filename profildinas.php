@@ -38,7 +38,7 @@
 						<td style="text-align:center;"><?=$profildinas[nama_profildinas]?></td>
 						<td style="text-align:center;"><?=$profildinas[deskripsi_profildinas]?></td>
 						<td style="text-align:center;">
-							<a href="download/<?=$profildinas[keterangan_profildinas]?>" download>Download File</a>
+							<a style="color:blue;" href="download/<?=$profildinas[keterangan_profildinas]?>" download>Download File</a>
 						</td>
 					</tr>
 					<?php
