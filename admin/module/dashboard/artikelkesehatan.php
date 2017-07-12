@@ -24,7 +24,7 @@
 			echo "</div>";
 		break;
 		case "edit":
-			$query = mysql_query("select * from artikelkesehatan where id = '$_GET[id_artikelkesehatan]'");
+			$query = mysql_query("select * from artikelkesehatan where id_artikelkesehatan = '$_GET[id]'");
 			$data = mysql_fetch_array($query);
 			?>
 				<div class="full_w">
@@ -95,7 +95,7 @@
 			<?php
 		break;
 		case "delete":
-			mysql_query("delete from artikelkesehatan where id = '$_GET[id]'");
+			mysql_query("delete from artikelkesehatan where id_artikelkesehatan = '$_GET[id]'");
 			header("location: ?module=artikelkesehatan");
 		break;
 	}
