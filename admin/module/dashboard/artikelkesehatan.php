@@ -24,7 +24,7 @@
 			echo "</div>";
 		break;
 		case "edit":
-			$query = mysql_query("select * from artikelkesehatan where id = '$_GET[id_artikelkesehatan]'");
+			$query = mysql_query("select * from artikelkesehatan where id_artikelkesehatan = '$_GET[id]'");
 			$data = mysql_fetch_array($query);
 			?>
 				<div class="full_w">
@@ -38,7 +38,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi Artikel Kesehatan</label></td>
-								<td><input type="text" name="isi_artikelkesehatan" style="width: 100%" value="<?php echo $data["isi_artikelkesehatan"]; ?>" /></td>
+								<!-- <td><input type="text" name="isi_artikelkesehatan" style="width: 100%" value="<?php echo $data["isi_artikelkesehatan"]; ?>" /></td> -->
+								<td><textarea name="isi_artikelkesehatan"><?php echo $data["isi_artikelkesehatan"]; ?></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar Artikel Kesehatan</label></td>
@@ -71,7 +72,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi artikelkesehatan</label></td>
-								<td><input type="text" name="isi_artikelkesehatan" style="width: 100%" /></td>
+								<!-- <td><input type="text" name="isi_artikelkesehatan" style="width: 100%" /></td> -->
+								<td><textarea name="isi_artikelkesehatan"></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar artikelkesehatan</label></td>
@@ -93,7 +95,7 @@
 			<?php
 		break;
 		case "delete":
-			mysql_query("delete from artikelkesehatan where id = '$_GET[id]'");
+			mysql_query("delete from artikelkesehatan where id_artikelkesehatan = '$_GET[id]'");
 			header("location: ?module=artikelkesehatan");
 		break;
 	}

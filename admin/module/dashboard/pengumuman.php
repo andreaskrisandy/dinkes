@@ -24,7 +24,7 @@
 			echo "</div>";
 		break;
 		case "edit":
-			$query = mysql_query("select * from pengumuman where id = '$_GET[id_pengumuman]'");
+			$query = mysql_query("select * from pengumuman where id_pengumuman = '$_GET[id]'");
 			$data = mysql_fetch_array($query);
 			?>
 				<div class="full_w">
@@ -38,7 +38,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi Pengumuman</label></td>
-								<td><input type="text" name="isi_pengumuman" style="width: 100%" value="<?php echo $data["isi_pengumuman"]; ?>" /></td>
+								<!-- <td><input type="text" name="isi_pengumuman" style="width: 100%" value="<?php echo $data["isi_pengumuman"]; ?>" /></td> -->
+								<td><textarea name="isi_pengumuman"><?php echo $data["isi_pengumuman"]; ?></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar Pengumuman</label></td>
@@ -71,7 +72,8 @@
 							</tr>
 							<tr>
 								<td><label>Isi Pengumuman</label></td>
-								<td><input type="text" name="isi_pengumuman" style="width: 100%" /></td>
+								<!-- <td><input type="text" name="isi_pengumuman" style="width: 100%" /></td> -->
+								<td><textarea name="isi_pengumuman"></textarea></td>
 							</tr>
 							<tr>
 								<td><label>Gambar Pengumuman</label></td>
@@ -93,7 +95,7 @@
 			<?php
 		break;
 		case "delete":
-			mysql_query("delete from pengumuman where id = '$_GET[id]'");
+			mysql_query("delete from pengumuman where id_pengumuman = '$_GET[id]'");
 			header("location: ?module=pengumuman");
 		break;
 	}

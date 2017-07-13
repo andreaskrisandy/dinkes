@@ -74,13 +74,13 @@
 						<!-- <li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li> -->
 					</ul>
 				</li>
-				<li class="upp"><a href="#">Non Akademik</a>
+				<!-- <li class="upp"><a href="#">Non Akademik</a>
 					<ul>
 						<li>&#8250; <a href="?module=non-akademik&id=1">Pengurus OSIS</a></li>
 						<li>&#8250; <a href="?module=non-akademik&id=2">Program Kerja OSIS</a></li>
 						<li>&#8250; <a href="?module=non-akademik&id=3">Ekstrakurikuler</a></li>
 					</ul>
-				</li>
+				</li> -->
 				<li class="upp"><a href="?module=galeri">Galeri</a></li>
 				<li class="upp"><a href="?module=inbox">Buku Tamu</a></li>
 				<li class="upp"><a href="?module=admin">Admin</a></li>
