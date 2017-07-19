@@ -10,7 +10,7 @@
 		$newName	= $random . $imgName;
 		Anggaran($newName);
 		mysql_query("insert into anggaran values ('','$_POST[nama_dpa]','$_POST[tahun_anggaran]','$_POST[deskripsi_anggaran]','$newName')");
-		header("location: ../../dashboard.php?module=b_anggaran");
+		header("location: ../../dashboard.php?module=anggaran");
 	}
 
 	if (isset($_POST['edit'])){
