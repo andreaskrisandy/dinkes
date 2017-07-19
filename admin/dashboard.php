@@ -52,7 +52,7 @@
 					<ul>
 						<li>&#8250; <a href="?module=history">Sejarah</a></li>
 						<li>&#8250; <a href="?module=vision">Visi &amp; Misi</a></li>
-						<li>&#8250; <a href="?module=kepsek">Struktur Organisasi</a></li>
+						<li>&#8250; <a href="?module=struktur">Struktur Organisasi</a></li>
 						<li>&#8250; <a href="?module=kepsek">Tugas Pokok</a></li>
 					</ul>
 				</li>
@@ -98,8 +98,10 @@
 						include("module/history/history.php");
 					} elseif ($module == 'vision'){
 						include("module/vision/vision.php");
-					} elseif ($module == 'kepsek'){
+          } elseif ($module == 'kepsek'){
 						include("module/kepsek/kepsek.php");
+					} elseif ($module == 'struktur'){
+						include("module/struktur/struktur.php");
 					} elseif ($module == 'contact'){
 						include("module/contact/contact.php");
 					} elseif ($module == 'kurikulum'){
