@@ -10,7 +10,7 @@
 		$newName	= $random . $imgName;
 		Download($newName);
 		mysql_query("insert into permenkes values ('','$_POST[nama_permenkes]','$_POST[tahun_permenkes]','$_POST[deskripsi_permenkes]','$newName')");
-		header("location: ../../dashboard.php?module=b_permenkes");
+		header("location: ../../dashboard.php?module=permenkes");
 	}
 
 	if (isset($_POST['edit'])){
