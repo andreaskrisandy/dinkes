@@ -3,7 +3,7 @@
 		default:
 			?>
 				<div class="full_w">
-				<div class="h_title"><b>Manajemen Data Kurikulum Coi</b></div>
+				<div class="h_title"><b>Manajemen Data Puskesmas</b></div>
 				<button type="submit" name="submit" class="ok1" onclick="window.location='?module=kurikulum&mode=add'">Tambah</button>
 			<?php
 			echo "<table class=\"admin\" border=\"0\" cellpadding=\"5px\" cellspacing=\"1px\"><thead>
@@ -30,7 +30,7 @@
 			$data = mysql_fetch_array($query);
 			?>
 				<div class="full_w">
-				<div class="h_title"><b>Manajemen Data Kurikulum</b></div>
+				<div class="h_title"><b>Manajemen Data Puskesmas</b></div>
 					<form action="module/kurikulum/action.php" method="post">
 						<input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>" />
 						<table class="admin" cellspacing="5px">
