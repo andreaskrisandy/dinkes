@@ -40,7 +40,7 @@
 						<td style="text-align:center;"><?= $anggaran[tahun_anggaran]?></td>
 						<td style="text-align:center;"><?= $anggaran[deskripsi_anggaran]?></td>
 						<td style="text-align:center;">
-							<a style="color:blue;" href="download/<?=$anggaran[keterangan_anggaran]?>" download>Download File</a>
+							<a style="color:blue;" href="<?= $anggaran[keterangan_anggaran] ?>">Download File</a>
 						</td>
 					</tr>
 					<?php

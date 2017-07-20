@@ -45,8 +45,8 @@
 								<td><textarea name="deskripsi_permenkes"><?php echo $data["deskripsi_permenkes"]; ?></textarea></td>
 							</tr>
 							<tr>
-								<td><label>File Permenkes</label></td>
-								<td><input type="file" name="permenkes" /> &nbsp; &nbsp;<a style="color: #999; text-decoration: none" href="../galeri/<?php echo $data['keterangan_permenkes']; ?>" target="_blank">File Permenkes</a></td>
+								<td><label>Link Download</label></td>
+								<td><input type="text" name="link_download" style="width: 100%" value="<?php echo $data["keterangan_permenkes"]; ?>" /></td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
@@ -82,8 +82,8 @@
 								<td><textarea name="deskripsi_permenkes"></textarea></td>
 							</tr>
 							<tr>
-								<td><label>File Permenkes</label></td>
-								<td><input type="file" name="permenkes" /> &nbsp; &nbsp;Document</td>
+								<td><label>Link Download</label></td>
+								<td><input type="text" name="link_download" style="width: 100%" /></td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
