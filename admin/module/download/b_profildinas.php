@@ -40,8 +40,8 @@
 								<td><textarea name="deskripsi_profildinas"><?php echo $data["deskripsi_profildinas"]; ?></textarea></td>
 							</tr>
 							<tr>
-								<td><label>File profildinas</label></td>
-								<td><input type="file" name="profildinas" /> &nbsp; &nbsp;<a style="color: #999; text-decoration: none" href="../galeri/<?php echo $data['keterangan_profildinas']; ?>" target="_blank">File profildinas</a></td>
+								<td><label>Link Download</label></td>
+								<td><input type="text" name="link_download" style="width: 100%" value="<?php echo $data["keterangan_profildinas"]; ?>" /></td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
@@ -73,8 +73,8 @@
 								<td><textarea name="deskripsi_profildinas"></textarea></td>
 							</tr>
 							<tr>
-								<td><label>File profildinas</label></td>
-								<td><input type="file" name="profildinas" /> &nbsp; &nbsp;Document</td>
+								<td><label>Link Download</label></td>
+								<td><input type="text" name="link_download" style="width: 100%" /></td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
