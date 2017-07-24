@@ -44,6 +44,10 @@
 								<td><input type="file" name="galeri" /> &nbsp; &nbsp;<a style="color: #999; text-decoration: none" href="../galeri/<?php echo $data['gambar']; ?>" target="_blank">Foto Galeri</a></td>
 							</tr>
 							<tr>
+								<td><label>Link Galeri</label></td>
+								<td><input type="text" name="link_galeri" style="width: 100%" value="<?php echo $data["url"]; ?>" /></td>
+							</tr>
+							<tr>
 								<td>&nbsp;</td>
 								<td>&nbsp;</td>
 							</tr>
@@ -75,6 +79,10 @@
 							<tr>
 								<td><label>Foto Galeri</label></td>
 								<td><input type="file" name="galeri" /> &nbsp; &nbsp;JPEG/JPG</td>
+							</tr>
+							<tr>
+								<td><label>Link Galeri</label></td>
+								<td><input type="text" name="link_galeri" style="width: 100%" /></td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
