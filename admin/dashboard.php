@@ -61,6 +61,7 @@
 						<li>&#8250; <a href="?module=kurikulum">Puskesmas</a></li>
 						<li>&#8250; <a href="?module=rumahsakit">Rumah Sakit</a></li>
 						<li>&#8250; <a href="?module=laboratorium">Laboratorium</a></li>
+						<li>&#8250; <a href="?module=yankesmob">Yankesmob</a></li>
 						<!-- <li>&#8250; <a href="?module=kelas">Data Kelas</a></li> -->
 						<!-- <li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li> -->
 					</ul>
@@ -126,6 +127,8 @@
 						include("module/uptdinas/b_rumahsakit.php");
 					}elseif ($module == 'laboratorium'){
 						include("module/uptdinas/b_lab.php");
+					}elseif ($module == 'yankesmob'){
+						include("module/yankesmob/yankesmob.php");
 					}elseif ($module == 'non-akademik'){
 						include("module/non-akademik/non-akademik.php");
 					}elseif ($module == 'teacher'){
