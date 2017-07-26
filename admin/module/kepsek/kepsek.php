@@ -9,7 +9,6 @@
 				<table>
 					<tbody>
 						<tr><td><textarea name="profil" ><?php echo $data['profil']; ?></textarea></td></tr>
-						<tr><td><input type="file" name="kepsek" /> &nbsp; &nbsp;Foto Kepala Sekolah</td></tr>
 						<tr><td>&nbsp;</td></tr>
 						<tr><td><button type="submit" name="submit" class="ok">Update</button></td></tr>
 					</tbody>
