@@ -105,9 +105,9 @@
 							<span></span>
 							<li><a href="#">Keuangan</a>
 								<ul>
-									<li><a href="#">Neraca</a></li>
-									<li><a href="#">Laporan Arus Kas &amp; Catatan di Keuangan</a></li>
-									<li><a href="#">Daftar Aset dan Investasi</a></li>
+									<li><a href="?page=neraca">Neraca</a></li>
+									<li><a href="?page=laparuskas">Lap Arus Kas &amp; Catatan Keu</a></li>
+									<li><a href="?page=daftaraset">Daftar Aset dan Investasi</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Kesga &amp; Gizi</a>
@@ -122,9 +122,8 @@
 							</li>
 							<li><a href="#">Bina Program</a>
 								<ul>
-									<li><a href="#">Laporan Realisasi I dan II</a></li>
-									<li><a href="#">PPTK</a></li>
-									<li><a href="#">Profil Dinkes</a></li>
+									<li><a href="?page=laprealisasi">Laporan Realisasi I dan II</a></li>
+									<li><a href="?page=pptk">PPTK</a></li>
 								</ul>
 							</li>
 							<span></span>
@@ -193,7 +192,17 @@
 								include('non-akademik.php');
 							} elseif ($page == 'rumahsakit'){
 								include('rumahsakit.php');
-							} elseif ($page =='galeri'){
+							} elseif ($page == 'neraca'){
+								include('neraca.php');
+							}elseif ($page == 'laparuskas'){
+								include('laparuskas.php');
+							}elseif ($page == 'laprealisasi'){
+								include('laprealisasi.php');
+							}elseif ($page == 'daftaraset'){
+								include('daftaraset.php');
+							}elseif ($page == 'pptk'){
+								include('pptk.php');
+							}elseif ($page =='galeri'){
 								include('galeri.php');
 							} elseif ($page == 'buku-tamu'){
 								include('tamu.php');
