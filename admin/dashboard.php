@@ -74,6 +74,20 @@
 						<!-- <li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li> -->
 					</ul>
 				</li>
+				<li class="upp"><a href="#">PPID</a>
+						<ul>
+							<li>&#8250;<a href="#">Keuangan</a>
+								<ul>
+									<li><a href="#">Neraca</a></li>
+									<li><a href="#">Laporan Arus Kas &amp; Catatan di Keuangan</a></li>
+									<li><a href="#">Daftar Aset dan Investasi</a></li>
+								</ul>
+							</li>
+							<li>&#8250;<a href="#">Kesga &amp; Gizi</a></li>
+							<li>&#8250;<a href="#">Yankes</a></li>
+							<li>&#8250;<a href="#">Bina Program</a></li>
+						</ul>
+					</li>
 				<!-- <li class="upp"><a href="#">Non Akademik</a>
 					<ul>
 						<li>&#8250; <a href="?module=non-akademik&id=1">Pengurus OSIS</a></li>
