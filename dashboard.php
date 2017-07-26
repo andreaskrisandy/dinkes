@@ -95,11 +95,41 @@
 							<li><a href="?page=permenkes">Permenkes</a></li>
 							<!-- <li><a href="?page=non-akademik&hal=program-kerja-osis">Profil Dinas</a></li> -->
 							<li><a href="?page=profildinas">Profil Dinas</a></li>
-              <li><a href="?page=anggaran">Anggaran</a></li>
+              				<li><a href="?page=anggaran">Anggaran</a></li>
 							<span></span>
 						</ul>
 					</li>
           <!-- <li><a href="?page=psc119">PSC 119</a></li> -->
+          <li><a href="#">PPID</a>
+						<ul>
+							<span></span>
+							<li><a href="#">Keuangan</a>
+								<ul>
+									<li><a href="#">Neraca</a></li>
+									<li><a href="#">Laporan Arus Kas &amp; Catatan di Keuangan</a></li>
+									<li><a href="#">Daftar Aset dan Investasi</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Kesga &amp; Gizi</a>
+								<ul>
+									<li><a href="#">Germas</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Yankes</a>
+								<ul>
+									<li><a href="#">Layad Rawat</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Bina Program</a>
+								<ul>
+									<li><a href="#">Laporan Realisasi I dan II</a></li>
+									<li><a href="#">PPTK</a></li>
+									<li><a href="#">Profil Dinkes</a></li>
+								</ul>
+							</li>
+							<span></span>
+						</ul>
+					</li>
           <li><a href="?page=buku-tamu">Kontak Kami</a></li>
 				</ul>
 				<br style="clear: left" />
