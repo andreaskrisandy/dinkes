@@ -77,7 +77,12 @@ if (!isset($_SESSION['MODGOD'])){
             </li>
             <li class="upp"><a href="#">PPID</a>
               <ul>
-                <li>&#8250;<a href="#">Kesga &amp; Gizi</a></li>
+                <li>&#8250;
+                  <a href="#">Kesga &amp; Gizi</a>
+                  <ul>
+                    <a href="?module=germas">Germas</a>
+                  </ul>
+                </li>
                 <li>&#8250;<a href="#">Yankes</a></li>
                 <li>&#8250;<a href="#">Bina Program</a></li>
                 <li>&#8250;<a href="#">Keuangan</a>
@@ -153,6 +158,8 @@ if (!isset($_SESSION['MODGOD'])){
           include("module/galeri/galeri.php");
         } elseif ($module == 'inbox'){
           include("module/inbox/inbox.php");
+        } elseif ($module == 'germas'){
+          include("module/ppid/b_germas.php");
         } elseif ($module == 'admin'){
           include("module/admin/admin.php");
         } elseif ($module == 'logout'){
