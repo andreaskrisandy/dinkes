@@ -58,9 +58,10 @@
 				</li>
 				<li class="upp"><a href="#">UPT Dinas</a>
 					<ul>
-						<li>&#8250; <a href="?module=kurikulum">UPT Dinas</a></li>
-						<li>&#8250; <a href="?module=teacher">Puskesmas</a></li>
-						<li>&#8250; <a href="?module=student">Laboratorium</a></li>
+						<li>&#8250; <a href="?module=kurikulum">Puskesmas</a></li>
+						<li>&#8250; <a href="?module=rumahsakit">Rumah Sakit</a></li>
+						<li>&#8250; <a href="?module=laboratorium">Laboratorium</a></li>
+						<li>&#8250; <a href="?module=yankesmob">Yankesmob</a></li>
 						<!-- <li>&#8250; <a href="?module=kelas">Data Kelas</a></li> -->
 						<!-- <li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li> -->
 					</ul>
@@ -74,6 +75,20 @@
 						<!-- <li>&#8250; <a href="?module=jadwal">Jadwal Pelajaran</a></li> -->
 					</ul>
 				</li>
+				<li class="upp"><a href="#">PPID</a>
+						<ul>
+							<li>&#8250;<a href="#">Keuangan</a>
+								<ul>
+									<li><a href="#">Neraca</a></li>
+									<li><a href="#">Laporan Arus Kas &amp; Catatan di Keuangan</a></li>
+									<li><a href="#">Daftar Aset dan Investasi</a></li>
+								</ul>
+							</li>
+							<li>&#8250;<a href="#">Kesga &amp; Gizi</a></li>
+							<li>&#8250;<a href="#">Yankes</a></li>
+							<li>&#8250;<a href="#">Bina Program</a></li>
+						</ul>
+					</li>
 				<!-- <li class="upp"><a href="#">Non Akademik</a>
 					<ul>
 						<li>&#8250; <a href="?module=non-akademik&id=1">Pengurus OSIS</a></li>
@@ -122,6 +137,12 @@
 						include("module/dashboard/promosikesehatan.php");
 					}elseif ($module == 'artikelkesehatan'){
 						include("module/dashboard/artikelkesehatan.php");
+					}elseif ($module == 'rumahsakit'){
+						include("module/uptdinas/b_rumahsakit.php");
+					}elseif ($module == 'laboratorium'){
+						include("module/uptdinas/b_lab.php");
+					}elseif ($module == 'yankesmob'){
+						include("module/yankesmob/yankesmob.php");
 					}elseif ($module == 'non-akademik'){
 						include("module/non-akademik/non-akademik.php");
 					}elseif ($module == 'teacher'){

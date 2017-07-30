@@ -17,12 +17,12 @@
 		} );
 	} );
 </script>
-<h2>Daftar Data Anggaran</h2>
+<h2>Daftar Data Laporan Realisasi I dan II</h2>
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="Table">
 	<thead>
 		<tr>
 			<th>No</th>
-			<th>DPA</th>
+			<th>Laporan Realisasi I dan II</th>
 			<th>Tahun</th>
 			<th>Deskripsi</th>
 			<th>Aksi</th>
@@ -31,16 +31,16 @@
 	<tbody>
 	<?php
 		$no = 1;
-		$query = mysql_query("select * from anggaran order by id_anggaran desc");
-		while ($anggaran = mysql_fetch_array($query)) {
+		$query = mysql_query("select * from laprealisasi order by id_laprealisasi desc");
+		while ($laprealisasi = mysql_fetch_array($query)) {
 			?>
 					<tr>
-						<td style="text-align:center;"><?= $no?></td>
-						<td style="text-align:center;"><?= $anggaran[nama_dpa]?></td>
-						<td style="text-align:center;"><?= $anggaran[tahun_anggaran]?></td>
-						<td style="text-align:center;"><?= $anggaran[deskripsi_anggaran]?></td>
+						<td style="text-align:center;"><?= $no ?></td>
+						<td style="text-align:center;"><?=$laprealisasi[nama_laprealisasi] ?></td>
+						<td style="text-align:center;"><?=$laprealisasi[tahun_laprealisasi]?></td>
+						<td style="text-align:center;"><?=$laprealisasi[deskripsi_laprealisasi] ?></td>
 						<td style="text-align:center;">
-							<a style="color:blue;" href="<?= $anggaran[keterangan_anggaran] ?>">Download File</a>
+							<a style="color:blue;" href="<?= $laprealisasi[keterangan_laprealisasi] ?>">Download File</a>
 						</td>
 					</tr>
 					<?php

@@ -17,27 +17,33 @@
 		} );
 	} );
 </script>
-<h2>Informasi Daftar Harga Laboratorium</h2>
+<h2>Daftar Data Lap Arus Kas dan Catatan Keuangan</h2>
 <table cellpadding="0" cellspacing="0" border="0" class="display" id="Table">
 	<thead>
 		<tr>
 			<th>No</th>
-			<th>Jenis Pelayanan</th>
-			<th>Tarif Pelayanan</th>
+			<th>Lap Arus Kas</th>
+			<th>Tahun</th>
+			<th>Deskripsi</th>
+			<th>Aksi</th>
 		</tr>
 	</thead>
 	<tbody>
 	<?php
 		$no = 1;
-		$query = mysql_query("select * from laboratorium order by id_lab desc");
-		while ($laboratorium = mysql_fetch_array($query)) {
-			echo    "
+		$query = mysql_query("select * from laparuskas order by id_laparuskas desc");
+		while ($laparuskas = mysql_fetch_array($query)) {
+			?>
 					<tr>
-						<td align=\"center\">$no</td>
-						<td align=\"center\">$laboratorium[jenis_pelayanan]</td>
-						<td align=\"center\">$laboratorium[tarif_pelayanan]</td>
+						<td style="text-align:center;"><?= $no ?></td>
+						<td style="text-align:center;"><?=$laparuskas[nama_laparuskas] ?></td>
+						<td style="text-align:center;"><?=$laparuskas[tahun_laparuskas]?></td>
+						<td style="text-align:center;"><?=$laparuskas[deskripsi_laparuskas] ?></td>
+						<td style="text-align:center;">
+							<a style="color:blue;" href="<?= $laparuskas[keterangan_laparuskas] ?>">Download File</a>
+						</td>
 					</tr>
-					";
+					<?php
 			$no++;
 		}
 	?>
