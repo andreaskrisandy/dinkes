@@ -112,7 +112,7 @@
 							</li>
 							<li><a href="#">Kesga &amp; Gizi</a>
 								<ul>
-									<li><a href="#">Germas</a></li>
+									<li><a href="?page=germas">Germas</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Yankes</a>
@@ -210,6 +210,8 @@
 								include('kontak.php');
               } elseif ($page == 'yankesmob'){
                 include('yankesmob.php');
+							} elseif ($page == 'germas'){
+                include('germas.php');
 							} elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
