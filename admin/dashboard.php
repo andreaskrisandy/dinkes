@@ -18,6 +18,7 @@ if (!isset($_SESSION['MODGOD'])){
     <link rel="shortcut icon" href="img/bandung.png">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/navi.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/customnavi.css" media="screen" />
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/nicEdit.js"></script>
     <script type="text/javascript">
@@ -77,19 +78,18 @@ if (!isset($_SESSION['MODGOD'])){
             </li>
             <li class="upp"><a href="#">PPID</a>
               <ul>
-                <li>&#8250;
-                  <a href="#">Kesga &amp; Gizi</a>
+                <li class="upp2">&#8250;<a href="#">Kesga &amp; Gizi</a>
                   <ul>
-                    <a href="?module=germas">Germas</a>
+                    <li>&#8250;<a href="?module=germas">Germas</a></li>
                   </ul>
                 </li>
                 <li>&#8250;<a href="#">Yankes</a></li>
                 <li>&#8250;<a href="#">Bina Program</a></li>
-                <li>&#8250;<a href="#">Keuangan</a>
+                <li class="upp2">&#8250;<a href="#">Keuangan</a>
                   <ul>
-                    <li><a href="#">Neraca</a></li>
-                    <li><a href="#">Laporan Arus Kas &amp; Catatan di Keuangan</a></li>
-                    <li><a href="#">Daftar Aset dan Investasi</a></li>
+                    <li>&#8250;<a href="#">Neraca</a></li>
+                    <li>&#8250;<a href="#">Laporan Arus Kas &amp; Catatan di Keuangan</a></li>
+                    <li>&#8250;<a href="#">Daftar Aset dan Investasi</a></li>
                   </ul>
                 </li>
               </ul>
