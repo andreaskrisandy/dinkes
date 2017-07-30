@@ -88,8 +88,8 @@ if (!isset($_SESSION['MODGOD'])){
                 <li class="upp2">&#8250;<a href="#">Keuangan</a>
                   <ul>
                     <li>&#8250;<a href="#">Neraca</a></li>
-                    <li>&#8250;<a href="#">Laporan Arus Kas &amp; Catatan di Keuangan</a></li>
-                    <li>&#8250;<a href="#">Daftar Aset dan Investasi</a></li>
+                    <li>&#8250;<a href="#">Laporan Arus Kas</a></li>
+                    <li>&#8250;<a href="#">Daftar Aset</a></li>
                   </ul>
                 </li>
               </ul>
