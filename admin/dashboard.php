@@ -88,12 +88,17 @@ if (!isset($_SESSION['MODGOD'])){
                     <li>&#8250;<a href="?module=layad">Layad Rawat</a></li>
                   </ul>
                 </li>
-                <li>&#8250;<a href="#">Bina Program</a></li>
+                <li class="upp2">&#8250;<a href="#">Bina Program</a>
+                	<ul>
+                		<li>&#8250;<a href="?module=laprealisasi">Laporan Realisasi I  &amp; II</a></li>
+                    	<li>&#8250;<a href="?module=pptk">PPTK</a></li>
+                    </ul>
+                </li>
                 <li class="upp2">&#8250;<a href="#">Keuangan</a>
                   <ul>
-                    <li>&#8250;<a href="#">Neraca</a></li>
-                    <li>&#8250;<a href="#">Laporan Arus Kas</a></li>
-                    <li>&#8250;<a href="#">Daftar Aset</a></li>
+                    <li>&#8250;<a href="?module=neraca">Neraca</a></li>
+                    <li>&#8250;<a href="?module=laparuskas">Laporan Arus Kas</a></li>
+                    <li>&#8250;<a href="?module=daftaraset">Daftar Aset</a></li>
                   </ul>
                 </li>
               </ul>
@@ -152,6 +157,16 @@ if (!isset($_SESSION['MODGOD'])){
           include("module/uptdinas/b_lab.php");
         }elseif ($module == 'yankesmob'){
           include("module/yankesmob/yankesmob.php");
+        }elseif ($module == 'neraca'){
+          include("module/ppid/b_neraca.php");
+        }elseif ($module == 'pptk'){
+          include("module/ppid/b_pptk.php");
+        }elseif ($module == 'daftaraset'){
+          include("module/ppid/b_daftaraset.php");
+        }elseif ($module == 'laparuskas'){
+          include("module/ppid/b_laparuskas.php");
+        }elseif ($module == 'laprealisasi'){
+          include("module/ppid/b_laprealisasi.php");
         }elseif ($module == 'non-akademik'){
           include("module/non-akademik/non-akademik.php");
         }elseif ($module == 'teacher'){
