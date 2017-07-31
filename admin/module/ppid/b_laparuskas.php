@@ -29,7 +29,7 @@
 			?>
 				<div class="full_w">
 				<div class="h_title"><b>Manajemen Data Download Lap Arus Kas dan Cat Keuangan</b></div>
-					<form action="module/download/action_laparuskas.php" method="post" enctype="multipart/form-data">
+					<form action="module/ppid/action_laparuskas.php" method="post" enctype="multipart/form-data">
 						<input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>" />
 						<table class="admin" cellspacing="5px">
 							<tr>
@@ -67,7 +67,7 @@
 			?>
 				<div class="full_w">
 				<div class="h_title"><b>Manajemen Data Download Lap Arus Kas dan Cat Keuangan</b></div>
-					<form action="module/download/action_laparuskas.php" method="post" enctype="multipart/form-data">
+					<form action="module/ppid/action_laparuskas.php" method="post" enctype="multipart/form-data">
 						<table class="admin" cellspacing="5px">
 							<tr>
 								<td><label>Lap Arus Kas dan Cat Keuangan</label></td>
