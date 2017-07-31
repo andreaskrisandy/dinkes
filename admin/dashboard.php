@@ -83,13 +83,17 @@ if (!isset($_SESSION['MODGOD'])){
                     <li>&#8250;<a href="?module=germas">Germas</a></li>
                   </ul>
                 </li>
-                <li>&#8250;<a href="#">Yankes</a></li>
+                <li class="upp2">&#8250;<a href="#">Yankes</a>
+                  <ul>
+                    <li>&#8250;<a href="?module=layad">Layad Rawat</a></li>
+                  </ul>
+                </li>
                 <li>&#8250;<a href="#">Bina Program</a></li>
                 <li class="upp2">&#8250;<a href="#">Keuangan</a>
                   <ul>
                     <li>&#8250;<a href="#">Neraca</a></li>
-                    <li>&#8250;<a href="#">Laporan Arus Kas &amp; Catatan di Keuangan</a></li>
-                    <li>&#8250;<a href="#">Daftar Aset dan Investasi</a></li>
+                    <li>&#8250;<a href="#">Laporan Arus Kas</a></li>
+                    <li>&#8250;<a href="#">Daftar Aset</a></li>
                   </ul>
                 </li>
               </ul>
@@ -160,6 +164,8 @@ if (!isset($_SESSION['MODGOD'])){
           include("module/inbox/inbox.php");
         } elseif ($module == 'germas'){
           include("module/ppid/b_germas.php");
+        } elseif ($module == 'layad'){
+          include("module/ppid/b_layad.php");
         } elseif ($module == 'admin'){
           include("module/admin/admin.php");
         } elseif ($module == 'logout'){
