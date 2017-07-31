@@ -117,7 +117,7 @@
 							</li>
 							<li><a href="#">Yankes</a>
 								<ul>
-									<li><a href="#">Layad Rawat</a></li>
+									<li><a href="?page=layad">Layad Rawat</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Bina Program</a>
@@ -212,6 +212,8 @@
                 include('yankesmob.php');
 							} elseif ($page == 'germas'){
                 include('germas.php');
+							} elseif ($page == 'layad'){
+                include('layad.php');
 							} elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
