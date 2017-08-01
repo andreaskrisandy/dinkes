@@ -215,7 +215,13 @@
                 include('germas.php');
 							} elseif ($page == 'layad'){
                 include('layad.php');
-							} elseif ($page == 'admin'){
+							} elseif ($page == 'pengumuman'){
+                include('pengumuman.php');
+							} elseif ($page == 'artikelkesehatan'){
+                include('artikelkesehatan.php');
+							} elseif ($page == 'promosikesehatan'){
+                include('promosikesehatan.php');
+							}elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
 								header('location: index.php');
