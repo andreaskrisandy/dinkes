@@ -14,15 +14,18 @@
 			$art = substr($data['isi_pengumuman'],0,100);
 			echo '
 			<h5>'.$data['judul_pengumuman'].'</h5>
+			<br><br>
 			<center>
 			<img width="300px" height="200px" src="dashboard/'.$data['gambar_pengumuman'].'">
 			</center>
+			<br>
 			<br>
 			<p>Di publikasikan pada '.$data['tgl_pengumuman'].'</p>
 			<p>'.$art.'..</p>
 			<a href=?page=pengumuman&id='.$data[id_pengumuman].'>Selengkapnya klik disini!</a>
 			<br><br>
 			<hr>
+			<br>
 			';}
 		}
 ?>
@@ -45,15 +48,18 @@
 			$art = substr($data['isi_artikelkesehatan'],0,100);
 			echo '
 			<h5>'.$data['judul_artikelkesehatan'].'</h5>
+			<br><br>
 			<center>
 			<img width="300px" height="200px" src="dashboard/'.$data['gambar_artikelkesehatan'].'">
 			</center>
+			<br>
 			<br>
 			<p>Di publikasikan pada '.$data['tgl_artikelkesehatan'].'</p>
 			<p>'.$art.'..</p>
 			<a href=?page=artikelkesehatan&id='.$data[id_artikelkesehatan].'>Selengkapnya klik disini!</a>
 			<br><br>
 			<hr>
+			<br>
 			';}
 		}
 		?>
@@ -74,9 +80,11 @@
 				$art = substr($data['isi_promosikesehatan'],0,100);
 				echo '
 				<h5>'.$data['judul_promosikesehatan'].'</h5>
+				<br><br>
 				<center>
 				<img width="300px" height="200px" src="dashboard/'.$data['gambar_promosikesehatan'].'">
 				</center>
+				<br>
 				<br>
 				<p>Di publikasikan pada '.$data['tgl_promosikesehatan'].'</p>
 				<p>'.$art.'..</p>
