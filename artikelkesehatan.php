@@ -1,1 +1,0 @@
-<h2>Artikel Kesehatan</h2>
