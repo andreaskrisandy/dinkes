@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/sexy-icon.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/table.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+		<link rel="stylesheet" type="text/css" href="css/dropdownmenu.css" />
 		<link rel="stylesheet" type="text/css" href="css/jsdatepick.css" />
 		<link rel="stylesheet" type="text/css" href="css/jsdatepick.css" />
 		<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
@@ -55,10 +56,10 @@
 			</div>
 
 			<div id="templatemo_menu" class="ddsmoothmenu">
-				<ul>
+				<ul class="top-level-menu">
 					<li><a href="?page=main">Beranda</a></li>
 					<li><a href="#">Profil</a>
-						<ul>
+						<ul class="second-level-menu">
 							<span></span>
 							<li><a href="?page=sejarah">Sejarah</a></li>
 							<li><a href="?page=visi-misi">Visi &amp; Misi</a></li>
@@ -68,7 +69,7 @@
 						</ul>
 					</li>
 					<li><a href="#">UPT Dinas</a>
-						<ul>
+						<ul class="second-level-menu">
 							<span></span>
 							<li><a href="?page=informasi-kurikulum">Puskesmas</a></li>
 							<li><a href="?page=rumahsakit">Rumah Sakit</a></li>
@@ -89,7 +90,7 @@
 					</li>
 					<li><a href="?page=galeri">Galeri</a></li>
           <li><a href="#">Download</a>
-						<ul>
+						<ul class="second-level-menu">
 							<span></span>
 							<!-- <li><a href="?page=non-akademik&hal=pengurus-osis">Permenkes</a></li> -->
 							<li><a href="?page=permenkes">Permenkes</a></li>
@@ -100,28 +101,28 @@
 						</ul>
 					</li>
           <!-- <li><a href="?page=psc119">PSC 119</a></li> -->
-          <li><a href="#">PPID</a>
-						<ul>
+          <li><a href="#">PPID Pembantu</a>
+						<ul class="second-level-menu">
 							<span></span>
 							<li><a href="#">Keuangan</a>
-								<ul>
+								<ul class="third-level-menu">
 									<li><a href="?page=neraca">Neraca</a></li>
 									<li><a href="?page=laparuskas">Lap Arus Kas &amp; Catatan Keu</a></li>
 									<li><a href="?page=daftaraset">Daftar Aset dan Investasi</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Kesga &amp; Gizi</a>
-								<ul>
+								<ul class="third-level-menu">
 									<li><a href="?page=germas">Germas</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Yankes</a>
-								<ul>
+								<ul class="third-level-menu">
 									<li><a href="?page=layad">Layad Rawat</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Bina Program</a>
-								<ul>
+								<ul class="third-level-menu">
 									<li><a href="?page=laprealisasi">Laporan Realisasi I dan II</a></li>
 									<li><a href="?page=pptk">PPTK</a></li>
 								</ul>
@@ -214,7 +215,13 @@
                 include('germas.php');
 							} elseif ($page == 'layad'){
                 include('layad.php');
-							} elseif ($page == 'admin'){
+							} elseif ($page == 'pengumuman'){
+                include('pengumuman.php');
+							} elseif ($page == 'artikelkesehatan'){
+                include('artikelkesehatan.php');
+							} elseif ($page == 'promosikesehatan'){
+                include('promosikesehatan.php');
+							}elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
 								header('location: index.php');
