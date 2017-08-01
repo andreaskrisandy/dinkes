@@ -84,6 +84,20 @@ top: 0;
 	background: url(../images/submenu_divider.jpg) bottom repeat-x;
 }
 
+.ddsmoothmenu ul li ul li ul li a{
+	font-weight: 500;
+	width: 147px; /*width of sub menus*/
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	margin: 0 0 0 1px;
+	font-size: 11px;
+	text-align: left;
+	background: none;
+	color: #000;
+	background: url(../images/submenu_divider.jpg) bottom repeat-x;
+}
+
 .ddsmoothmenu ul li ul li ul {
 	width: 250px; /*width of sub menus*/
 }

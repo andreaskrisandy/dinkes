@@ -38,7 +38,7 @@ if (!isset($_SESSION['MODGOD'])){
         </div>
         <div id="nav">
           <ul>
-            <li class="upp"><a href="?module=main">Berita Terbaru</a></li>
+            <li class="upp"><a href="?module=main">Sambutan</a></li>
             <li class="upp"><a href="#">Dashboard</a>
               <ul>
                 <!-- <li>&#8250; <a href="?module=non-akademik&id=1">Pengumuman</a></li>
