@@ -101,7 +101,7 @@
 						</ul>
 					</li>
           <!-- <li><a href="?page=psc119">PSC 119</a></li> -->
-          <li><a href="#">PPID</a>
+          <li><a href="#">PPID Pembantu</a>
 						<ul class="second-level-menu">
 							<span></span>
 							<li><a href="#">Keuangan</a>
