@@ -127,6 +127,9 @@
 									<li><a href="?page=pptk">PPTK</a></li>
 								</ul>
 							</li>
+              <li>
+                <a href="?page=layanan_informasi_publik">Layanan Informasi Publik</a>
+							</li>
 							<span></span>
 						</ul>
 					</li>
@@ -221,7 +224,9 @@
                 include('artikelkesehatan.php');
 							} elseif ($page == 'promosikesehatan'){
                 include('promosikesehatan.php');
-							}elseif ($page == 'admin'){
+							} elseif ($page == 'layanan_informasi_publik'){
+                include('layanan_informasi_publik.php');
+							} elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
 								header('location: index.php');

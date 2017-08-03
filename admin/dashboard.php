@@ -101,6 +101,8 @@ if (!isset($_SESSION['MODGOD'])){
                     <li>&#8250;<a href="?module=daftaraset">Daftar Aset</a></li>
                   </ul>
                 </li>
+                <li class="upp2">&#8250;<a href="?module=layanan_informasi_publik">Informasi Publik</a>
+                </li>
               </ul>
             </li>
             <!-- <li class="upp"><a href="#">Non Akademik</a>
@@ -181,6 +183,8 @@ if (!isset($_SESSION['MODGOD'])){
           include("module/ppid/b_germas.php");
         } elseif ($module == 'layad'){
           include("module/ppid/b_layad.php");
+        } elseif ($module == 'layanan_informasi_publik'){
+          include("module/ppid/b_layanan_informasi_publik.php");
         } elseif ($module == 'admin'){
           include("module/admin/admin.php");
         } elseif ($module == 'logout'){
