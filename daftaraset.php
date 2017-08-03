@@ -40,7 +40,7 @@
 						<td style="text-align:center;"><?=$daftaraset[tahun_daftaraset]?></td>
 						<td style="text-align:center;"><?=$daftaraset[deskripsi_daftaraset] ?></td>
 						<td style="text-align:center;">
-							<a style="color:blue;" href="<?= $daftaraset[keterangan_daftaraset] ?>">Download File</a>
+							<a target="_blank" style="color:blue;" href="<?= $daftaraset[keterangan_daftaraset] ?>">Download File</a>
 						</td>
 					</tr>
 					<?php

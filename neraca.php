@@ -40,7 +40,7 @@
 						<td style="text-align:center;"><?=$neraca[tahun_neraca]?></td>
 						<td style="text-align:center;"><?=$neraca[deskripsi_neraca] ?></td>
 						<td style="text-align:center;">
-							<a style="color:blue;" href="<?= $neraca[keterangan_neraca] ?>">Download File</a>
+							<a target="_blank" style="color:blue;" href="<?= $neraca[keterangan_neraca] ?>">Download File</a>
 						</td>
 					</tr>
 					<?php

@@ -40,7 +40,7 @@
 						<td style="text-align:center;"><?=$permenkes[tahun_permenkes]?></td>
 						<td style="text-align:center;"><?=$permenkes[deskripsi_permenkes] ?></td>
 						<td style="text-align:center;">
-							<a style="color:blue;" href="<?= $permenkes[keterangan_permenkes] ?>">Download File</a>
+							<a target="_blank" style="color:blue;" href="<?= $permenkes[keterangan_permenkes] ?>">Download File</a>
 						</td>
 					</tr>
 					<?php

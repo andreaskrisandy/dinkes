@@ -40,7 +40,7 @@
 						<td style="text-align:center;"><?=$pptk[tahun_pptk]?></td>
 						<td style="text-align:center;"><?=$pptk[deskripsi_pptk] ?></td>
 						<td style="text-align:center;">
-							<a style="color:blue;" href="<?= $pptk[keterangan_pptk] ?>">Download File</a>
+							<a target="_blank" style="color:blue;" href="<?= $pptk[keterangan_pptk] ?>">Download File</a>
 						</td>
 					</tr>
 					<?php

@@ -5,7 +5,7 @@ if (isset($_GET['id'])){
   echo "<img src=\"galeri/$query[gambar]\" style=\"border: 1px dashed #999; width: 100%\" />";
   echo "<p style=\"margin: 20px 0 0 0;align=justify;color:black;\">$query[deskripsi]</p>";
   echo "<br>";
-  echo "<a href=$query[url]>Galeri Selengkapnya Klik Disini</a>";
+  echo "<a target=_blank href=$query[url]>Galeri Selengkapnya Klik Disini</a>";
 } else {
   echo "<h2>Galeri Dinas Kesehatan Kota Bandung</h2>";
   $query = mysql_query("select * from galeri order by id desc");

@@ -38,7 +38,7 @@
 						<td style="text-align:center;"><?=$layanan_informasi_publik[nama] ?></td>
 						<td style="text-align:center;"><?=$layanan_informasi_publik[deskripsi] ?></td>
 						<td style="text-align:center;">
-							<a style="color:blue;" href="<?= $layanan_informasi_publik[url] ?>">Download File</a>
+							<a target="_blank" style="color:blue;" href="<?= $layanan_informasi_publik[url] ?>">Download File</a>
 						</td>
 					</tr>
 					<?php

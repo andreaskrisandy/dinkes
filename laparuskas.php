@@ -40,7 +40,7 @@
 						<td style="text-align:center;"><?=$laparuskas[tahun_laparuskas]?></td>
 						<td style="text-align:center;"><?=$laparuskas[deskripsi_laparuskas] ?></td>
 						<td style="text-align:center;">
-							<a style="color:blue;" href="<?= $laparuskas[keterangan_laparuskas] ?>">Download File</a>
+							<a target="_blank" style="color:blue;" href="<?= $laparuskas[keterangan_laparuskas] ?>">Download File</a>
 						</td>
 					</tr>
 					<?php
