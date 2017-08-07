@@ -47,7 +47,7 @@
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 1000px;
 }
 
 /* Caption of Modal Image */
@@ -140,6 +140,19 @@ $('.myImg').click(function(){
     var newSrc = this.src;
     modalImg.attr('src', newSrc);
     captionText.innerHTML = this.alt;
+});
+
+// pause slider
+$(window).load(function(){
+  $('#slider').nivoSlider({
+   animSpeed: 500,
+   pauseTime: 4000,
+   effect : 'boxRain',
+   directionNav : false,
+   controlNav: false,
+  });
+  jQuery('#slider').data('nivoslider').stop();
+  setTimeout("jQuery(#slider').data('nivoslider').start()",5000);
 });
 
 // Get the <span> element that closes the modal

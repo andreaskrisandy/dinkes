@@ -149,10 +149,11 @@
 			<div id="templatemo_slider_wrapper">
 
 				<div id="slider" class="nivoSlider">
-          <a href="#"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
-          <a href="#"><img src="images/slider/slide2.jpg" alt="Slider 05" /></a>
-          <a href="#"><img src="images/slider/slide3.jpg" alt="Slider 05" /></a>
-          <a href="#"><img src="images/slider/slide4.jpg" alt="Slider 05" /></a>
+          <a href="?page=germas"><img src="images/slider/slider1.jpg" alt="Slider 05" /></a>
+          <a href="?page=main"><img src="images/slider/slide2.jpg" alt="Slider 05" /></a>
+          <a href="?page=artikelkesehatan&id=4"><img src="images/slider/slide3.jpg" alt="Slider 05" /></a>
+          <a href="?page=yankesmob"><img src="images/slider/slide4.jpg" alt="Slider 05" /></a>
+          <a href="?page=promosikesehatan&id=2"><img src="images/slider/slide5.jpg" alt="Slider 05" /></a>
 				</div>
 
 				<div id="htmlcaption" class="nivo-html-caption">
