@@ -63,7 +63,7 @@
 							<span></span>
 							<li><a href="?page=sejarah">Sejarah</a></li>
 							<li><a href="?page=visi-misi">Visi &amp; Misi</a></li>
-							<li><a href="?page=struktur-organisasi">Struktur Organisani</a></li>
+							<li><a href="?page=struktur-organisasi">Struktur Organisasi</a></li>
 							<li><a href="?page=profil-kepala-sekolah">Tugas Pokok dan Fungsi</a></li>
 							<span></span>
 						</ul>

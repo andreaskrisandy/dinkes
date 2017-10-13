@@ -11,7 +11,7 @@ if (isset($_GET['id'])){
   $query = mysql_query("select * from galeri order by id desc");
   while ($galeri = mysql_fetch_array($query)){
     echo "<div class=\"gallery\">";
-    echo "<img class=\"myImg\" src=\"galeri/$galeri[gambar]\" style=\"margin: 0 20px 25px 0; float: left; height: auto\" />";
+    echo "<img class=\"myImg\" src=\"galeri/$galeri[gambar]\" style=\"margin: 0 20px 25px 0;height: auto\" />";
     echo "<div class=\"desc\">";
     echo "<a href=\"?page=galeri&id=$galeri[id]\" title=\"$galeri[judul]\">$galeri[judul]</a>";
     echo "</div>";

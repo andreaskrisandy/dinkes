@@ -12,6 +12,7 @@
 	}else{
 		while($data=mysql_fetch_array($has)){
 			// $art = substr($data['isi_pengumuman'],0,100);
+			$tanggal = date("d-F-Y",strtotime($data['tgl_pengumuman']));
 			echo '
 			<h5>'.$data['judul_pengumuman'].'</h5>
 			<br><br>
@@ -20,7 +21,7 @@
 			</center>
 			<br>
 			<br>
-			<p>Di publikasikan pada '.$data['tgl_pengumuman'].'</p>
+			<p>Di publikasikan pada '.$tanggal.'</p>
 			<a href=?page=pengumuman&id='.$data[id_pengumuman].'>Selengkapnya klik disini!</a>
 			<br><br>
 			<hr>
@@ -45,6 +46,7 @@
 	}else{
 		while($data=mysql_fetch_array($has)){
 			// $art = substr($data['isi_artikelkesehatan'],0,100);
+			$tanggal = date("d-F-Y",strtotime($data['tgl_artikelkesehatan']));
 			echo '
 			<h5>'.$data['judul_artikelkesehatan'].'</h5>
 			<br><br>
@@ -53,7 +55,7 @@
 			</center>
 			<br>
 			<br>
-			<p>Di publikasikan pada '.$data['tgl_artikelkesehatan'].'</p>
+			<p>Di publikasikan pada '.$tanggal.'</p>
 			<a href=?page=artikelkesehatan&id='.$data[id_artikelkesehatan].'>Selengkapnya klik disini!</a>
 			<br><br>
 			<hr>
@@ -75,6 +77,7 @@
 			echo'<center>Tidak Ada Promosi</center>';
 		}else{
 			while($data=mysql_fetch_array($has)){
+				$tanggal = date("d-F-Y",strtotime($data['tgl_promosikesehatan']));
 				// $art = substr($data['isi_promosikesehatan'],0,100);
 				echo '
 				<h5>'.$data['judul_promosikesehatan'].'</h5>
@@ -84,7 +87,7 @@
 				</center>
 				<br>
 				<br>
-				<p>Di publikasikan pada '.$data['tgl_promosikesehatan'].'</p>
+				<p>Di publikasikan pada '.$tanggal.'</p>
 				<a href=?page=promosikesehatan&id='.$data[id_promosikesehatan].'>Selengkapnya klik disini!</a>
 				<br><br>
 				<hr>
