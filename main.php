@@ -4,8 +4,18 @@
 	$beranda_data = mysql_fetch_array($beranda_query);
 	echo "<h2>$beranda_data[page_title]</h2>";
 
+	$per_page = 3;
+
 	$has = mysql_query("select * from pengumuman order by id_pengumuman desc");
 	$num = mysql_num_rows($has);
+
+	$page_query = mysql_query("select COUNT(*) FROM pengumuman");
+	$pages = ceil(mysql_result($page_query,0)/$per_page);
+
+	$page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;
+	$start = ($page - 1) * $per_page;
+
+	$query = mysql_query("select * FROM pengumuman LIMIT $start, $per_page");
 
 	if($num<1){
 		echo'<center>Tidak Ada Artikel</center>';
@@ -27,6 +37,12 @@
 			<hr>
 			<br>
 			';}
+		}
+
+		if($pages >= 1 && $page <= $pages){
+			for($x=1; $x<=$pages; $x++){
+				echo ($x == $page) ? '<b><a href="?page='.$x.'">'.$x.'</a></b> ' : '<a href="?page='.$x.'">'.$x.'</a> ';
+			}
 		}
 ?>
 
