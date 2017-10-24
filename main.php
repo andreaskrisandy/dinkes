@@ -12,15 +12,25 @@
 	$page_query = mysql_query("select COUNT(*) FROM pengumuman");
 	$pages = ceil(mysql_result($page_query,0)/$per_page);
 
-	$page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;
-	$start = ($page - 1) * $per_page;
+	// $page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;
+	// $start = ($page - 1) * $per_page;
 
-	$query = mysql_query("select * FROM pengumuman LIMIT $start, $per_page");
+	// $query = mysql_query("select * from pengumuman limit $start, $per_page");
+
+	$page = $_GET['ct'];
+
+	if ($page=="" || $page=="1") {
+		$page1=0;
+	}else{
+		$page1=($page*5)-5;
+	}
+
+	$res = mysql_query("select * from pengumuman");
 
 	if($num<1){
 		echo'<center>Tidak Ada Artikel</center>';
 	}else{
-		while($data=mysql_fetch_array($has)){
+		while($data=mysql_fetch_array($res)){
 			// $art = substr($data['isi_pengumuman'],0,100);
 			$tanggal = date("d-F-Y",strtotime($data['tgl_pengumuman']));
 			echo '
@@ -39,10 +49,14 @@
 			';}
 		}
 
-		if($pages >= 1 && $page <= $pages){
-			for($x=1; $x<=$pages; $x++){
-				echo ($x == $page) ? '<b><a href="?page='.$x.'">'.$x.'</a></b> ' : '<a href="?page='.$x.'">'.$x.'</a> ';
-			}
+		$result = mysql_query("select * from pengumuman");
+		$count = mysql_num_rows($res);
+		//
+		$a=$count/5;
+		$a= ceil($a);
+		echo "<br>" ;
+		for ($b=1; $b <=$a ; $b++) {
+			echo'<a href="?page=pengumuman&ct='.$b.'">'.$b.' </a>';
 		}
 ?>
 
