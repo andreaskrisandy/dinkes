@@ -32,16 +32,16 @@
 	<tbody>
 	<?php
 		$no = 1;
-		$query = mysql_query("select * from kurikulum order by id_kurikulum desc");
-		while ($kurikulum = mysql_fetch_array($query)) {
+		$query = mysql_query("select * from rumahsakit order by id_rs desc");
+		while ($rumahsakit = mysql_fetch_array($query)) {
 			echo    "
 					<tr>
-						<td>$no</td>
-						<td>$kurikulum[ks]</td>
-						<td>$kurikulum[mapel]</td>
-						<td>$kurikulum[standar]</td>
-						<td>$kurikulum[kompetensi]</td>
-						<td>$kurikulum[tambahan]</td>
+						<td align=\"center\">$no</td>
+						<td align=\"center\">$rumahsakit[nama_rs]</td>
+						<td align=\"center\">$rumahsakit[penganggungjawab_rs]</td>
+						<td align=\"center\">$rumahsakit[alamat_rs]</td>
+						<td align=\"center\">$rumahsakit[notlp_rs]</td>
+						<td align=\"center\">$rumahsakit[pu_rs]</td>
 					</tr>
 					";
 			$no++;

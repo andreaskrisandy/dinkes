@@ -14,7 +14,7 @@
 		imagedestroy($im_src);
 		imagedestroy($im);
 	}
-	
+
 	function Guru($fupload_name){
 		$vdir_upload = "../../../teacher/";
 		$vfile_upload = $vdir_upload . $fupload_name;
@@ -30,7 +30,7 @@
 		imagedestroy($im_src);
 		imagedestroy($im);
 	}
-	
+
 	function Siswa($fupload_name){
 		$vdir_upload = "../../../student/";
 		$vfile_upload = $vdir_upload . $fupload_name;
@@ -51,6 +51,70 @@
 		$vdir_upload = "../../../galeri/";
 		$vfile_upload = $vdir_upload . $fupload_name;
 		move_uploaded_file($_FILES["galeri"]["tmp_name"], $vfile_upload);
+		$im_src = imagecreatefromjpeg($vfile_upload);
+		$src_width = imageSX($im_src);
+		$src_height = imageSY($im_src);
+		$dst_width = imageSX($im_src);
+		$dst_height = ($dst_width/$src_width)*$src_height;
+		$im = imagecreatetruecolor($dst_width,$dst_height);
+		imagecopyresampled($im, $im_src, 0, 0, 0, 0, $dst_width, $dst_height, $src_width, $src_height);
+		imagejpeg($im,$vdir_upload . $fupload_name);
+		imagedestroy($im_src);
+		imagedestroy($im);
+	}
+
+	function UploadStruktur($fupload_name){
+		$vdir_upload = "../../../struktur/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["struktur"]["tmp_name"], $vfile_upload);
+		$im_src = imagecreatefromjpeg($vfile_upload);
+		$src_width = imageSX($im_src);
+		$src_height = imageSY($im_src);
+		$dst_width = imageSX($im_src);
+		$dst_height = ($dst_width/$src_width)*$src_height;
+		$im = imagecreatetruecolor($dst_width,$dst_height);
+		imagecopyresampled($im, $im_src, 0, 0, 0, 0, $dst_width, $dst_height, $src_width, $src_height);
+		imagejpeg($im,$vdir_upload . $fupload_name);
+		imagedestroy($im_src);
+		imagedestroy($im);
+	}
+
+	function UploadYankesmob($fupload_name){
+		$vdir_upload = "../../../yankesmob/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["yankesmob"]["tmp_name"], $vfile_upload);
+		$im_src = imagecreatefromjpeg($vfile_upload);
+		$src_width = imageSX($im_src);
+		$src_height = imageSY($im_src);
+		$dst_width = imageSX($im_src);
+		$dst_height = ($dst_width/$src_width)*$src_height;
+		$im = imagecreatetruecolor($dst_width,$dst_height);
+		imagecopyresampled($im, $im_src, 0, 0, 0, 0, $dst_width, $dst_height, $src_width, $src_height);
+		imagejpeg($im,$vdir_upload . $fupload_name);
+		imagedestroy($im_src);
+		imagedestroy($im);
+	}
+
+	function UploadGermas($fupload_name){
+		$vdir_upload = "../../../germas/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["germas"]["tmp_name"], $vfile_upload);
+		$im_src = imagecreatefromjpeg($vfile_upload);
+		$src_width = imageSX($im_src);
+		$src_height = imageSY($im_src);
+		$dst_width = imageSX($im_src);
+		$dst_height = ($dst_width/$src_width)*$src_height;
+		$im = imagecreatetruecolor($dst_width,$dst_height);
+		imagecopyresampled($im, $im_src, 0, 0, 0, 0, $dst_width, $dst_height, $src_width, $src_height);
+		imagejpeg($im,$vdir_upload . $fupload_name);
+		imagedestroy($im_src);
+		imagedestroy($im);
+	}
+
+	function UploadLayad($fupload_name){
+		$vdir_upload = "../../../layad/";
+		$vfile_upload = $vdir_upload . $fupload_name;
+		move_uploaded_file($_FILES["layad"]["tmp_name"], $vfile_upload);
 		$im_src = imagecreatefromjpeg($vfile_upload);
 		$src_width = imageSX($im_src);
 		$src_height = imageSY($im_src);

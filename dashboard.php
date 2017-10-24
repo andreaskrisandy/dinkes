@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/sexy-icon.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/table.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+		<link rel="stylesheet" type="text/css" href="css/dropdownmenu.css" />
 		<link rel="stylesheet" type="text/css" href="css/jsdatepick.css" />
 		<link rel="stylesheet" type="text/css" href="css/jsdatepick.css" />
 		<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
@@ -55,10 +56,10 @@
 			</div>
 
 			<div id="templatemo_menu" class="ddsmoothmenu">
-				<ul>
+				<ul class="top-level-menu">
 					<li><a href="?page=main">Beranda</a></li>
 					<li><a href="#">Profil</a>
-						<ul>
+						<ul class="second-level-menu">
 							<span></span>
 							<li><a href="?page=sejarah">Sejarah</a></li>
 							<li><a href="?page=visi-misi">Visi &amp; Misi</a></li>
@@ -68,7 +69,7 @@
 						</ul>
 					</li>
 					<li><a href="#">UPT Dinas</a>
-						<ul>
+						<ul class="second-level-menu">
 							<span></span>
 							<li><a href="?page=informasi-kurikulum">Puskesmas</a></li>
 							<li><a href="?page=rumahsakit">Rumah Sakit</a></li>
@@ -89,17 +90,49 @@
 					</li>
 					<li><a href="?page=galeri">Galeri</a></li>
           <li><a href="#">Download</a>
-						<ul>
+						<ul class="second-level-menu">
 							<span></span>
 							<!-- <li><a href="?page=non-akademik&hal=pengurus-osis">Permenkes</a></li> -->
 							<li><a href="?page=permenkes">Permenkes</a></li>
 							<!-- <li><a href="?page=non-akademik&hal=program-kerja-osis">Profil Dinas</a></li> -->
 							<li><a href="?page=profildinas">Profil Dinas</a></li>
-              <li><a href="?page=anggaran">Anggaran</a></li>
+              				<li><a href="?page=anggaran">Anggaran</a></li>
 							<span></span>
 						</ul>
 					</li>
           <!-- <li><a href="?page=psc119">PSC 119</a></li> -->
+          <li><a href="#">PPID Pembantu</a>
+						<ul class="second-level-menu">
+							<span></span>
+							<li><a href="#">Keuangan</a>
+								<ul class="third-level-menu">
+									<li><a href="?page=neraca">Neraca</a></li>
+									<li><a href="?page=laparuskas">Lap Arus Kas &amp; Catatan Keu</a></li>
+									<li><a href="?page=daftaraset">Daftar Aset dan Investasi</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Kesga &amp; Gizi</a>
+								<ul class="third-level-menu">
+									<li><a href="?page=germas">Germas</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Yankes</a>
+								<ul class="third-level-menu">
+									<li><a href="?page=layad">Layad Rawat</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Bina Program</a>
+								<ul class="third-level-menu">
+									<li><a href="?page=laprealisasi">Laporan Realisasi I dan II</a></li>
+									<li><a href="?page=pptk">PPTK</a></li>
+								</ul>
+							</li>
+              <li>
+                <a href="?page=layanan_informasi_publik">Layanan Informasi Publik</a>
+							</li>
+							<span></span>
+						</ul>
+					</li>
           <li><a href="?page=buku-tamu">Kontak Kami</a></li>
 				</ul>
 				<br style="clear: left" />
@@ -163,7 +196,17 @@
 								include('non-akademik.php');
 							} elseif ($page == 'rumahsakit'){
 								include('rumahsakit.php');
-							} elseif ($page =='galeri'){
+							} elseif ($page == 'neraca'){
+								include('neraca.php');
+							}elseif ($page == 'laparuskas'){
+								include('laparuskas.php');
+							}elseif ($page == 'laprealisasi'){
+								include('laprealisasi.php');
+							}elseif ($page == 'daftaraset'){
+								include('daftaraset.php');
+							}elseif ($page == 'pptk'){
+								include('pptk.php');
+							}elseif ($page =='galeri'){
 								include('galeri.php');
 							} elseif ($page == 'buku-tamu'){
 								include('tamu.php');
@@ -171,6 +214,18 @@
 								include('kontak.php');
               } elseif ($page == 'yankesmob'){
                 include('yankesmob.php');
+							} elseif ($page == 'germas'){
+                include('germas.php');
+							} elseif ($page == 'layad'){
+                include('layad.php');
+							} elseif ($page == 'pengumuman'){
+                include('pengumuman.php');
+							} elseif ($page == 'artikelkesehatan'){
+                include('artikelkesehatan.php');
+							} elseif ($page == 'promosikesehatan'){
+                include('promosikesehatan.php');
+							} elseif ($page == 'layanan_informasi_publik'){
+                include('layanan_informasi_publik.php');
 							} elseif ($page == 'admin'){
 								header("location: admin/index.php");
 							} else {
